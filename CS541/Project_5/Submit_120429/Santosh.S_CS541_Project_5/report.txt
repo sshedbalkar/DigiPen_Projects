@@ -1,0 +1,11 @@
+render.cpp:
+1. Initializes the KD Tree
+2. Implements raycasting and checks if a given ray intersects with the KD Tree
+3. If such an intersection happens, it outputs the color of the pixel to the screen
+
+Struct KDNode:
+1. Implements a KDNode Struct which is used as a node in the KD Tree
+2. Has a list of all the polygons in the node
+4. Has pointers to left and right side KD Nodes
+
+I simplified my original KDTree implementation.

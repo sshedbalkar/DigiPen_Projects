@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{ed61d8b0-0221-4596-b894-bda48ffa5cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debugTools">
+      <UniqueIdentifier>{1fa24a31-ec95-4526-8190-76733a426b49}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JobSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Os.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debugTools\Assert.cpp">
+      <Filter>Source Files\debugTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Tester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexJob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="JobGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="JobSystem.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Os.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Singleton.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="debugTools\Assert.h">
+      <Filter>Source Files\debugTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Tester.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TestJob1.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common\FunctionBind.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\Variant.h">
+      <Filter>Source Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexJob.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JobFromFunction.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="JobGroup.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

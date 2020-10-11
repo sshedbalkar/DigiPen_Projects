@@ -1,0 +1,22 @@
+Started Wye
+Initializing...
+Graphics inited
+GameData inited
+Physics inites
+Set Main Camera
+Camera: Look: [0, 0, 0], Up: [0, 1, 0]
+Loaded Texture: ..\assets\images_arrow2.png
+Loading Shader: ../Shaders/Multiplicative.fx
+Loading Shader: ../Shaders/Debug.fx
+Loading Shader: ../Shaders/Shader1.fx
+Loading Shader: ../Shaders/HalfShade.fx
+Creating Compositions-----------------------:
+---------cs_1--------
+Set Main Camera
+Camera: Look: [0, 0, 0], Up: [0, 1, 0]
+--------------------Finished------------------------
+Flocking
+Activating window...
+Starting Game loop...
+Destroying Systems...
+RETURNING TO WINDOWS...

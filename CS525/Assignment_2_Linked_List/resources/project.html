@@ -1,0 +1,134 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="new.css">
+<title>Project 2</title>
+</head>
+
+<body>
+<center>
+<h1>Programming assignment - linked lists</h1>
+</center>
+
+<p class="technote">
+<font size=+1>FAQ:</font> 
+<ul>
+</ul>
+
+<!--
+<li> What's the meaning of the return  value in insert functions.
+<br>ANSWER:
+<br> 0 - OK
+<br> 1 - error (malloc)
+</ul>
+</p>
+-->
+
+Most of you already have an implementation of linked list - you may reuse it 
+for this assignment. Suggested modifications:
+<ul>
+<li>check the pointer arithmetic - I'll use CodeGuard, which is very strict. Here is an example, CodeGuard doesn't like the following code
+<pre>
+<B><FONT COLOR="#228B22">int</FONT></B> <B><FONT COLOR="#0000FF">main</FONT></B>() {
+  <B><FONT COLOR="#228B22">int</FONT></B> array[10];
+  <B><FONT COLOR="#A020F0">for</FONT></B> (<B><FONT COLOR="#228B22">int</FONT></B> *p=array;p&lt;array;i+=6) {
+    *p=0;
+  }
+}
+</pre>
+the reason is that during the second iteration <tt>p=array+12</tt>, so 
+<tt>p</tt> points to outside of the array (remember the rule if you start with
+		a pointer to some element in an array, the result of pointer arithmetic
+		should be a pointer to an element of the SAME array, OR a pointer to a ONE
+		PAST LAST). What we got in the previous example was 3 past last. 
+The next example is OK:
+<pre>
+<B><FONT COLOR="#228B22">int</FONT></B> <B><FONT COLOR="#0000FF">main</FONT></B>() {
+  <B><FONT COLOR="#228B22">int</FONT></B> array[10];
+  <B><FONT COLOR="#A020F0">for</FONT></B> (<B><FONT COLOR="#228B22">int</FONT></B> *p=array;p&lt;array;i+=<b>1</b>) {
+    *p=0;
+  }
+}
+</pre>
+The best way to make sure that your pointer arithmetic is legal is to use 
+only <tt>!=</tt> when testing for loop-termination (compare to STL!):
+<pre>
+<B><FONT COLOR="#228B22">int</FONT></B> <B><FONT COLOR="#0000FF">main</FONT></B>() {
+  <B><FONT COLOR="#228B22">int</FONT></B> array[10];
+  <B><FONT COLOR="#A020F0">for</FONT></B> (<B><FONT COLOR="#228B22">int</FONT></B> *p=array;p <b>!=</b> array;i+=5) {
+    *p=0;
+  }
+}
+</pre>
+
+<li>implement one of insert technics discussed in "Linked Lists" slides, for example with a dummy node - it should simplify your code a lot.
+</ul>
+<p><b>Notes:</b>
+<ul>
+<li><tt>spvector.c</tt>
+notice that even if you choose not to implement extra credit part of the
+assignment, you have to provide (possibly) empty implementations for all
+function from <tt>spvector.h</tt>. If a function takes an argument, you have to "use" it to get rid of warning, simplest way is to print it: 
+<br>
+<pre>
+printf("%p\n",(void*)arg1); /* assuming arg1 is a pointer */
+printf("%i\n",(void*)arg2); /* assuming arg2 is an integer*/
+....
+</pre>
+</ul>
+
+<p><b>Grading notes:</b>
+<ul>
+<li>your code will be graded based on all 3 compilers - both compilation
+and run-time
+<li>memory errors/leaks will be penalized (CodeGuard will be used to detect those)
+any)
+<li><tt>doxygen</tt> comments are required
+</ul>
+
+
+<p>	<a href="handout.pdf"><font size=+1>Assignment Statement (pdf)</font></a>
+	<br>
+	<a href="Doxyfile">doxygen configuration</a>
+	<br>
+	<a href="bcc_cg.cgi">CodeGuard configuration</a>
+	<br>
+	<a href="Makefile">Makefile</a>  see Assignment on how to use it, 
+        or just copy/paste command lines for each compiler.
+	</ul>
+	<br> All the files above including header, partial inplementation, driver,
+	master output, configuration files, etc. are in 
+	<a href="project.zip">project.zip</a>
+	<br> 
+	browse
+<a href=".">project folder</a>
+<hr>
+<br>
+using the driver:
+<br>
+<tt> <pre>
+./EXECUTABLE TEST_NUMBER &gt; my_out
+diff my_out outTEST_NUMBER --strip-trailing-cr
+</pre> </tt>
+<br>where TEST_NUMBER is 0..12
+<br>EXECUTABLE is one of gcc0.exe msc0.exe bcc0.exe
+<hr>
+<br>To run all tests 
+<tt> <pre>
+for ((i=0;i&lt;13;++i)); do ./bcc0.exe $i &gt; out$i.my_bcc; done
+for ((i=0;i&lt;13;++i)); do echo "COMPARE test $i"; diff out$i out$i.my_bcc --strip-trailing-cr; done
+</pre> </tt>
+<hr>
+<br>
+
+<br>
+<h2>Grading criteria</h2>
+Roughly:
+<pre>
+Submission 10
+Compile    20 
+Runtime    40
+Quality    10
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Compositions
+
+///////////////////////
+Component IDs:
+		CT_None						= 0
+		CT_Transform,				= 1
+		CT_Camera,					= 2
+		CT_Sprite,					= 3
+		CT_Body,					= 4
+		CT_Controller,				= 5
+		CT_Component,				= 6
+		CT_Composition,				= 7
+		CT_System,					= 8
+		CT_EventDispatcher,			= 9
+		CT_Core,					= 10
+		CT_MovieClip,				= 11
+		CT_Block					= 12
+		CT_Hero						= 13
+		CT_Border					= 14
+		CT_AI_1						= 15
+		CT_Bullet					= 16
+		CT_BOMB						= 17
+		CT_BombEffect				= 18
+		CT_HUD						= 19
+		CT_Gold						= 20
+		CT_Key						= 21
+		
+Shape IDs:
+		Sid_Circle,					= 0
+		Sid_Box,					= 1
+-->
+
+<root>
+	<Settings
+		fps="60"
+		gridX="32"
+		gridY="24"
+		blockSize="25"
+		startPos="0,0"
+		maxLives="3"
+		maxBullets="100"
+		maxBombs="25"
+		maxLevels="3"
+		goldValue="200"
+		levelBonus="2000"
+	/>
+	<Textures>
+		<Texture id="t_18" name="Iroh1" url="../Assets/Bullet12.png" />
+		<Texture id="t_19" name="Suki" url="../Assets/bomb121.png" />
+		<Texture id="t_20" name="Appa" url="../Assets/heart1.png" />
+		
+		<Texture id="t_21" name="Cursor1" url="../Assets/Cursor1.png" />
+		<Texture id="t_22" name="Cursor2" url="../Assets/Cursor2.png" />
+		<Texture id="t_23" name="Wall1" url="../Assets/wall.jpg" />
+		<Texture id="t_24" name="WallSmall" url="../Assets/wall4.jpg" />
+		
+		<Texture id="t_25" name="Block_1" url="../Assets/block11.jpg" />
+		<Texture id="t_26" name="Block_2" url="../Assets/block12.jpg" />
+		<Texture id="t_27" name="Block_3" url="../Assets/block13.jpg" />
+		<Texture id="t_28" name="Block_4" url="../Assets/crown.png" />
+		<Texture id="t_29" name="Block_5" url="../Assets/block15.jpg" />
+		<Texture id="t_30" name="Block_6" url="../Assets/block16.jpg" />
+		<Texture id="t_31" name="Block_7" url="../Assets/block172.png" />
+		
+		<Texture id="t_32" name="Bullet1" url="../Assets/Bullet2.png" />
+		<Texture id="t_33" name="Bomb" url="../Assets/bomb2.png" />
+		<Texture id="t_34" name="Alpha Circle" url="../Assets/AlphaCircle.png" />
+		<Texture id="t_35" name="Controls" url="../Assets/Controls.png" />
+		<Texture id="t_36" name="Gold" url="../Assets/gold-coin.png" />
+		<Texture id="t_37" name="Game Lost" url="../Assets/GameLost.png" />
+		<Texture id="t_38" name="Game win" url="../Assets/GameWin.png" />
+		<Texture id="t_39" name="Key" url="../Assets/green-key.png" />
+	</Textures>
+	<Shaders>
+		<Shader id="s_1" name="Basic" url="../Shaders/Multiplicative.fx" />
+		<Shader id="s_2" name="Debug" url="../Shaders/Debug.fx" debug="1" />
+		<Shader id="s_3" name="test1" url="../Shaders/Shader1.fx" />
+		<Shader id="s_4" name="Y shade" url="../Shaders/HalfShade.fx" />
+	</Shaders>
+	<AI>
+	</AI>
+	<Blocks>
+		<Block id="1" tex="t_25" desc="regular block"/>
+		<Block id="2" tex="t_26" desc="AI 1" type="1"/>
+		<Block id="3" tex="t_27" desc="AI 1" type="2"/>
+		<Block id="4" tex="" desc="Gold" />
+		<Block id="5" tex="" desc="Key" />
+		<Block id="6" tex="t_31" desc="Locked Block" />
+		<Block id="7" tex="t_28" desc="final Block" />
+		<Block id="8" desc="Hero" />
+	</Blocks>
+	<Map id="1" >
+		<Row id="r_00" values="X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X" />
+		<Row id="r_01" values="X,8,0,0,4,4,4,0,0,4,4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,X" />
+		<Row id="r_02" values="X,1,1,1,1,4,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,0,1,0,0,0,0,1,0,0,0,X" />
+		<Row id="r_03" values="X,0,0,0,0,0,0,1,0,0,5,0,4,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,X" />
+		<Row id="r_04" values="X,0,1,4,1,0,4,1,0,1,1,1,4,1,0,4,4,4,4,0,1,1,0,0,0,1,1,4,1,4,1,X" />
+		<Row id="r_05" values="X,4,1,0,1,0,1,0,0,0,1,0,4,1,1,4,0,1,1,0,0,1,0,0,0,0,1,4,1,4,1,X" />
+		<Row id="r_06" values="X,4,0,0,4,0,1,1,0,0,1,0,1,1,0,1,0,4,0,0,1,1,1,0,1,1,1,4,0,4,4,X" />
+		<Row id="r_07" values="X,0,0,0,0,0,0,1,0,1,0,0,0,0,0,1,0,4,1,1,0,0,0,0,0,0,0,4,5,1,4,X" />
+		<Row id="r_08" values="X,1,0,0,0,0,0,1,0,1,0,0,0,1,0,1,0,4,0,1,0,0,0,1,1,1,0,0,0,1,4,X" />
+		<Row id="r_09" values="X,1,1,1,0,0,0,0,0,1,0,0,0,1,0,1,1,1,1,1,0,1,0,0,0,1,0,0,0,1,0,X" />
+		<Row id="r_10" values="X,0,0,0,0,1,1,1,0,1,1,0,0,1,1,4,1,1,0,0,0,1,0,0,0,1,1,0,0,1,0,X" />
+		<Row id="r_11" values="X,0,4,4,0,0,0,1,0,0,1,0,0,0,4,4,4,4,0,1,0,1,0,0,0,0,1,0,0,0,0,X" />
+		<Row id="r_12" values="X,0,4,4,1,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,1,1,1,0,1,0,1,1,1,X" />
+		<Row id="r_13" values="X,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,X" />
+		<Row id="r_14" values="X,4,1,1,1,1,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,X" />
+		<Row id="r_15" values="X,1,1,0,1,4,4,1,1,1,0,0,0,1,6,1,0,0,1,0,2,0,0,0,1,1,1,1,1,0,0,X" />
+		<Row id="r_16" values="X,0,0,0,0,0,0,0,0,1,0,1,0,1,4,1,1,1,1,0,4,0,0,1,0,0,0,1,4,1,0,X" />
+		<Row id="r_17" values="X,1,1,0,0,0,0,1,0,1,1,1,1,1,4,0,1,4,1,0,1,0,0,0,0,1,0,0,0,0,0,X" />
+		<Row id="r_18" values="X,4,4,0,0,0,0,1,0,1,4,4,4,1,4,0,1,4,1,0,1,1,1,1,1,1,0,1,0,0,0,X" />
+		<Row id="r_19" values="X,0,1,1,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,1,1,1,1,X" />
+		<Row id="r_20" values="X,0,0,0,0,1,0,0,0,0,1,0,0,0,1,1,1,2,1,1,1,1,1,1,0,1,0,6,4,4,0,X" />
+		<Row id="r_21" values="X,1,1,0,1,1,0,0,0,1,1,0,1,6,1,4,1,1,4,4,1,4,5,1,0,1,0,1,4,7,4,X" />
+		<Row id="r_22" values="X,0,2,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4,1,1,0,0,0,1,0,4,4,X" />
+		<Row id="r_23" values="X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X" />
+	</Map>
+	<Map id="2" >
+		<Row id="r_00" values="X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X" />
+		<Row id="r_01" values="X,4,1,2,1,0,0,0,0,1,4,1,0,4,4,0,1,0,4,4,0,4,4,4,0,0,0,1,4,4,2,X" />
+		<Row id="r_02" values="X,4,1,0,0,0,0,0,0,6,4,1,0,0,0,0,1,1,0,0,1,0,4,0,0,0,1,5,1,4,0,X" />
+		<Row id="r_03" values="X,4,1,1,1,1,0,0,1,4,4,1,0,1,1,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0,X" />
+		<Row id="r_04" values="X,4,4,0,0,0,0,0,1,4,4,1,0,0,1,1,1,1,1,5,1,1,0,0,0,0,1,0,0,1,0,X" />
+		<Row id="r_05" values="X,4,0,0,0,0,1,0,1,1,1,1,1,0,1,0,4,0,1,0,0,0,0,0,0,1,0,0,0,0,0,X" />
+		<Row id="r_06" values="X,1,1,1,0,1,1,0,1,4,0,0,0,0,0,0,4,0,1,0,0,0,0,0,1,1,0,0,1,0,1,X" />
+		<Row id="r_07" values="X,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,4,0,0,1,1,0,0,1,1,0,0,1,0,0,X" />
+		<Row id="r_08" values="X,0,0,0,1,0,0,0,0,4,4,0,4,0,4,0,4,0,1,1,0,0,4,0,4,1,0,0,1,0,0,X" />
+		<Row id="r_09" values="X,1,1,1,1,0,0,0,0,4,4,0,0,4,0,4,1,1,0,0,0,4,4,4,4,0,0,1,1,0,0,X" />
+		<Row id="r_10" values="X,4,1,0,0,0,1,1,0,0,0,0,1,1,1,1,1,4,0,0,0,0,0,0,0,1,1,1,0,0,0,X" />
+		<Row id="r_11" values="X,4,5,1,1,0,1,0,0,0,0,0,0,0,4,4,1,4,0,0,1,1,0,1,0,0,0,0,4,4,0,X" />
+		<Row id="r_12" values="X,4,1,0,0,1,1,0,0,8,1,0,0,0,4,1,1,1,0,0,1,0,0,1,1,0,0,1,1,1,1,X" />
+		<Row id="r_13" values="X,0,1,0,0,0,1,0,0,1,1,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,0,0,0,X" />
+		<Row id="r_14" values="X,0,0,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,4,0,0,0,0,0,0,0,1,4,1,X" />
+		<Row id="r_15" values="X,1,1,1,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,1,1,1,1,X" />
+		<Row id="r_16" values="X,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,1,4,4,7,X" />
+		<Row id="r_17" values="X,0,1,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,0,1,5,1,0,4,4,0,1,4,4,4,X" />
+		<Row id="r_18" values="X,4,1,4,1,0,0,1,4,1,1,4,0,1,4,1,0,1,1,1,1,1,1,0,4,4,0,1,6,1,1,X" />
+		<Row id="r_19" values="X,4,1,4,1,0,0,1,1,4,0,0,0,1,4,1,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,X" />
+		<Row id="r_20" values="X,4,1,4,1,0,0,1,4,1,0,4,4,1,4,1,4,0,4,4,0,0,0,0,0,1,0,0,0,0,0,X" />
+		<Row id="r_21" values="X,4,1,4,1,0,0,4,0,1,0,4,1,4,1,4,4,0,4,4,0,1,1,1,1,1,0,0,0,0,0,X" />
+		<Row id="r_22" values="X,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,3,X" />
+		<Row id="r_23" values="X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X" />
+	</Map>
+	<Map id="3" >
+		<Row id="r_00" values="X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X" />
+		<Row id="r_01" values="X,5,0,0,1,0,0,8,0,0,1,0,4,4,1,0,4,4,4,4,0,1,0,1,0,0,4,4,4,0,5,X" />
+		<Row id="r_02" values="X,0,0,0,1,1,0,1,0,0,0,0,0,1,1,0,4,1,1,4,0,1,0,1,1,1,0,1,1,0,0,X" />
+		<Row id="r_03" values="X,1,1,0,0,0,0,0,0,0,0,1,1,0,1,0,4,1,4,4,0,6,0,0,0,0,0,0,1,0,0,X" />
+		<Row id="r_04" values="X,0,1,0,1,0,0,0,0,1,1,4,4,0,1,0,4,4,4,0,1,1,1,0,0,0,0,0,0,0,0,X" />
+		<Row id="r_05" values="X,0,0,0,1,4,4,1,1,0,0,0,0,1,1,1,1,0,0,0,1,0,0,0,0,1,1,4,0,1,1,X" />
+		<Row id="r_06" values="X,1,0,0,0,0,4,0,1,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,1,4,0,1,1,X" />
+		<Row id="r_07" values="X,1,1,0,0,0,4,0,0,0,1,0,4,0,1,1,0,0,0,0,0,4,0,0,0,0,1,0,6,4,4,X" />
+		<Row id="r_08" values="X,4,1,1,0,0,0,4,0,1,1,4,0,4,0,4,0,4,0,0,0,4,4,0,0,0,0,1,1,4,4,X" />
+		<Row id="r_09" values="X,4,0,0,6,1,0,0,0,4,0,0,4,1,1,1,1,1,4,0,1,1,1,0,0,0,1,0,0,0,0,X" />
+		<Row id="r_10" values="X,0,4,0,1,0,1,1,0,0,0,0,0,1,5,0,0,6,0,0,1,2,0,1,0,0,1,1,0,0,0,X" />
+		<Row id="r_11" values="X,0,5,0,6,0,0,1,0,1,1,1,4,1,0,7,0,1,4,0,1,0,0,0,1,5,0,1,4,0,4,X" />
+		<Row id="r_12" values="X,0,1,1,1,0,0,1,0,0,0,0,0,6,0,0,2,1,0,0,1,1,0,0,1,0,0,0,1,1,4,X" />
+		<Row id="r_13" values="X,0,0,0,1,0,0,1,0,0,1,0,4,1,1,1,1,1,4,0,0,0,0,1,1,1,0,0,0,1,4,X" />
+		<Row id="r_14" values="X,0,1,0,1,0,0,1,0,1,0,0,0,4,0,4,0,4,0,0,0,0,0,0,1,3,0,0,0,0,1,X" />
+		<Row id="r_15" values="X,1,1,1,0,0,0,1,1,0,0,1,1,0,0,1,0,0,1,0,0,0,5,0,1,0,0,0,0,0,0,X" />
+		<Row id="r_16" values="X,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,0,1,0,1,0,0,1,1,1,1,X" />
+		<Row id="r_17" values="X,0,0,0,0,0,0,4,4,4,0,1,1,4,0,0,0,1,1,1,1,0,0,0,1,0,0,0,0,0,0,X" />
+		<Row id="r_18" values="X,0,0,0,0,1,0,1,1,0,1,0,1,0,0,0,0,1,0,0,6,0,0,0,1,0,0,0,1,0,0,X" />
+		<Row id="r_19" values="X,0,0,0,1,1,1,0,0,0,1,0,1,0,1,1,0,1,0,0,1,0,0,0,0,4,4,1,0,0,1,X" />
+		<Row id="r_20" values="X,0,1,3,0,1,1,1,0,0,1,0,1,1,4,0,0,0,1,5,0,1,1,0,0,4,4,1,0,0,1,X" />
+		<Row id="r_21" values="X,0,1,0,0,4,4,1,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0,0,1,4,0,X" />
+		<Row id="r_22" values="X,0,0,1,0,4,4,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,X" />
+		<Row id="r_23" values="X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X,X" />
+	</Map>
+	<Archetypes>
+		<Archetype id="a_0">
+			<Composition id="a" name="Cursor">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="2,-2,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_3" type="11">
+						<Data color="0,0,0,1" shader="s_1" position="0,0,0" size="25,25" />
+						<Frames>
+							<Frame frameNum="1" sprite="t_21" />
+							<Frame frameNum="25" sprite="t_22" />
+							<Frame frameNum="37" sprite="t_22" />
+						</Frames>
+					</Component>
+					<Component id="cm_3" type="13">
+						<Data speed="200.0" start="1,1" />
+					</Component>
+					<Component id="cm_4" type="4">
+					<!--
+						<Data shape="1" extents="12.0,12.0,12.0" mass="1" resitution="0.3" friction="0.3" damping="0.1" />
+						-->
+						<Data shape="0" radius="12.5" mass="0.5" resitution="100" friction="0.1" damping="0.005" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_1">
+			<Composition id="b" name="MainCamera">
+				<Components>
+					<Component id="cm_4" type="1">
+						<Data position="0,0,0" />
+					</Component>
+					<Component id="cm_6" type="2">
+						<Data lookAt="0,0,0" up="0,1,0" />
+					</Component>
+					<!--
+					<Component id="cm_3" type="5">
+						<Data speed="10.0" />
+					</Component>
+					-->
+					
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_8">
+			<Composition id="c" name="Wall">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="10,300,10" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_9">
+			<Composition id="d" name="Block">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_4" color="0,0,1,0" shader="s_1" position="0,0,0" size="25,25" />
+					</Component>
+					<Component id="cm_5" type="12">
+						<Data type="b_1" pos="0,0" />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="12.5,12.5,12.5" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_10">
+			<Composition id="e" name="AI_1">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_30" color="0,0,1,0" shader="s_1" position="0,0,0" size="25,25" />
+					</Component>
+					<Component id="cm_5" type="15">
+						<Data type="b_1" pos="0,0" maxVel="200" dirChangeRate="0.25" maxIdleTime="0.5" seekRad="10" />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="12.5,12.5,12.5" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_11">
+			<Composition id="f" name="Bullet">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_32" color="0,0,1,0" shader="s_1" position="0,0,0" size="13,5" />
+					</Component>
+					<Component id="cm_2" type="16">
+						<Data />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="6.5,2.5,12.5" mass="0.00000000000001" resitution="0.00000000009" friction="0.999999999" damping="0.9999999" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_12">
+			<Composition id="g" name="Bomb">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_33" color="0,0,1,0" shader="s_1" position="0,0,0" size="20,20" />
+					</Component>
+					<Component id="cm_2" type="17">
+						<Data />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="0" radius="10" mass="0.05" resitution="0.1" friction="0.9" damping="0.99" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		
+		<Archetype id="a_13">
+			<Composition id="h" name="HUD">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3" name="heart">
+						<Data sprite="t_20" color="0,0,1,0" shader="s_1" position="400,-25,0" size="30,30" />
+					</Component>
+					<Component id="cm_2" type="3" name="bullets">
+						<Data sprite="t_18" color="0,0,1,0" shader="s_1" position="550,-25,0" size="40,40" />
+					</Component>
+					<Component id="cm_2" type="3" name="bomb">
+						<Data sprite="t_19" color="0,0,1,0" shader="s_1" position="700,-25,0" size="30,30" />
+					</Component>
+					<Component id="cm_2" type="3" name="Gold">
+						<Data sprite="t_36" color="0,0,1,0" shader="s_1" position="250,-25,0" size="30,30" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_14">
+			<Composition id="i" name="Controls">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3" name="Controls">
+						<Data sprite="t_35" color="0,0,1,0" shader="s_1" position="400,-300,0" size="800,600" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_15">
+			<Composition id="j" name="Gold">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3" name="Gold">
+						<Data sprite="t_36" color="0,0,1,0" shader="s_1" position="0,0,0" size="25,25" />
+					</Component>
+					<Component id="cm_2" type="20" name="Gold" >
+						<Data value="200" />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="0" radius="12.5" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_16">
+			<Composition id="i" name="Game Lost">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3" name="Controls">
+						<Data sprite="t_37" color="0,0,1,0" shader="s_1" position="0,-50,0" size="800,600" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_17">
+			<Composition id="i" name="Game Won">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3" name="Controls">
+						<Data sprite="t_38" color="0,0,1,0" shader="s_1" position="0,-50,0" size="800,600" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_18">
+			<Composition id="k" name="Key">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3" name="Key">
+						<Data sprite="t_39" color="0,0,1,0" shader="s_1" position="0,0,0" size="25,25" />
+					</Component>
+					<Component id="cm_2" type="21" name="Key" >
+						<Data value="200" />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="0" radius="12.5" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_19">
+			<Composition id="l" name="Lock Block">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_31" color="0,0,1,0" shader="s_1" position="0,0,0" size="25,25" />
+					</Component>
+					<Component id="cm_5" type="12">
+						<Data type="b_2" pos="0,0" />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="12.5,12.5,12.5" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_20">
+			<Composition id="m" name="Crown Block">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_28" color="0,0,1,0" shader="s_1" position="0,0,0" size="25,25" />
+					</Component>
+					<Component id="cm_5" type="12">
+						<Data type="b_2" pos="0,0" />
+					</Component>
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="12.5,12.5,12.5" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+				</Components>
+			</Composition>
+		</Archetype>
+	</Archetypes>
+	
+	<Compositions>
+	<Composition id="cs_1" archetype="a_1" position="0,0,-50"/>
+	<!--
+	<Composition id="cs_2" archetype="a_0" position="1,1,0"/>
+	-->
+	<Composition id="cs_3" archetype="a_13" position="-400,350,1"/>
+	<!--
+	<Composition id="cs_3" archetype="a_3" position="-200,200,0" rotation="0,0,0" scale="0.3,0.3,0.3" />
+	<Composition id="cs_4" archetype="a_4" position="100,20,0" rotation="0,0,0" scale="0.5,0.5,0.5" />
+	-->
+	<!--
+	<Composition id="cs_5" archetype="a_7" position="0,-293.5,1" rotation="0,0,0" scale="1,1,1" />
+	<Composition id="cs_6" archetype="a_7" position="0,293.5,1" rotation="0,0,0" scale="1,1,1" />
+	<Composition id="cs_7" archetype="a_8" position="-393,0,1" rotation="0,0,0" scale="1,1,1" />
+	<Composition id="cs_8" archetype="a_8" position="393,0,1" rotation="0,0,0" scale="1,1,1" />
+	-->
+	</Compositions>
+</root>

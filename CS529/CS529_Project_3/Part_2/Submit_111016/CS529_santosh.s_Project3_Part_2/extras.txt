@@ -1,0 +1,9 @@
+Extras:
+1. Particle effect for forward acceleration
+2. Particle effect for bullet fire
+3. Random generation of asteroid shapes (Asteroid shapes are generated randomly)
+4. Blinking circles (red/green) around the ship when you die/level-up
+
+
+Known issues:
+1. Animated point to static circle collision detection is imperfect so there are issues with the functionalities that use this function, namely: Asteroid-Asteroid collision, Bullet-Asteroid collision, Ship-Asteroid collision

@@ -1,0 +1,4 @@
+cl /Femsc0.exe driver.cpp vector.cpp /EHa      /MDd /W4 /Za /Zc:forScope /nologo /D_CRT_SECURE_NO_DEPRECATE /I"../../../common-code/"  
+driver.cpp
+vector.cpp
+Generating Code...

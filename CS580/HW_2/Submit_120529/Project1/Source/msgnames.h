@@ -1,0 +1,57 @@
+/* Copyright Steve Rabin, 2012. 
+ * All rights reserved worldwide.
+ *
+ * This software is provided "as is" without express or implied
+ * warranties. You may freely copy and compile this source into
+ * applications you distribute provided that the copyright text
+ * below is included in the resulting source code, for example:
+ * "Portions Copyright Steve Rabin, 2012"
+ */
+
+//These message names are processed inside msg.h
+
+REGISTER_MESSAGE_NAME(MSG_NULL)							//Reserved message name
+REGISTER_MESSAGE_NAME(MSG_GENERIC_TIMER)				//Reserved message name
+REGISTER_MESSAGE_NAME(MSG_SPAWN_GENERIC_TIMER)			//Reserved message name
+REGISTER_MESSAGE_NAME(MSG_CHANGE_STATE_DELAYED)			//Reserved message name
+REGISTER_MESSAGE_NAME(MSG_CHANGE_SUBSTATE_DELAYED)		//Reserved message name
+
+REGISTER_MESSAGE_NAME(MSG_MoveToStart)
+REGISTER_MESSAGE_NAME(MSG_ReadyToRun)
+REGISTER_MESSAGE_NAME(MSG_SignalToRun)
+REGISTER_MESSAGE_NAME(MSG_Run)
+REGISTER_MESSAGE_NAME(MSG_Continue_Run)
+REGISTER_MESSAGE_NAME(MSG_Finished_Run)
+REGISTER_MESSAGE_NAME(MSG_Switch_1)
+REGISTER_MESSAGE_NAME(MSG_Switch_1_1_Done)
+REGISTER_MESSAGE_NAME(MSG_Switch_1_2_Done)
+REGISTER_MESSAGE_NAME(MSG_Switch_1_Done)
+REGISTER_MESSAGE_NAME(MSG_Switch_2)
+REGISTER_MESSAGE_NAME(MSG_Switch_2_Done)
+//Add new messages here
+
+
+//Used for Zombie and Human demo state machines
+REGISTER_MESSAGE_NAME(MSG_CheckTouch)
+REGISTER_MESSAGE_NAME(MSG_Tagged)
+REGISTER_MESSAGE_NAME(MSG_SetTargetPosition)
+REGISTER_MESSAGE_NAME(MSG_Arrived)
+REGISTER_MESSAGE_NAME(MSG_Reset)
+REGISTER_MESSAGE_NAME(MSG_MouseClick)
+
+
+//Unit test messages
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage2)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage3)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage4)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage5)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage6)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage7)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage8)
+REGISTER_MESSAGE_NAME(MSG_UnitTestMessage9)
+REGISTER_MESSAGE_NAME(MSG_UnitTestBroken)
+REGISTER_MESSAGE_NAME(MSG_UnitTestPing)
+REGISTER_MESSAGE_NAME(MSG_UnitTestAck)
+REGISTER_MESSAGE_NAME(MSG_UnitTestDone)
+REGISTER_MESSAGE_NAME(MSG_UnitTestTimer)

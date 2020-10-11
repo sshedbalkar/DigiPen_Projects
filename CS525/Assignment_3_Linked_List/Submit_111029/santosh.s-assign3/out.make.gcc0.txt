@@ -1,0 +1,1 @@
+g++ -o gcc0.exe driver.cpp vector.cpp -Wall -Wextra -ansi -Wold-style-cast -Woverloaded-virtual -Wsign-promo  -Wctor-dtor-privacy -Wnon-virtual-dtor -Wreorder -pedantic -O3 -I ../../../common-code/  -Wl,--enable-auto-import

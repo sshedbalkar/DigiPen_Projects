@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<root Name="root">
+    <Level Name="Level">
+        <Layers>
+            <Layer Name="Main_Layer" Visible="true">
+                <Items>
+                    <Item d6p1:type="RectangleItem" Name="Rectangle_1" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>4656</X>
+                            <Y>1116</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>platform_test0</value>
+                        </ArchetypeId>
+                        <ActivatedBySecondaryObjectIds Type="string">
+                            <value>0,0,0,0</value>
+                        </ActivatedBySecondaryObjectIds>
+                        <SecondaryObjectId Type="string">
+                            <value>0</value>
+                        </SecondaryObjectId>
+                        <ActivatesObjectWithSecondaryId Type="string">
+                            <value>0</value>
+                        </ActivatesObjectWithSecondaryId>
+                        <Position Type="vec2">
+                            <value>23.28,-5.58</value>
+                        </Position>
+                        <Rotation Type="float">
+                            <value>0</value>
+                        </Rotation>
+                        <Width>25634</Width>
+                        <Height>679</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>128.17,3.395,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="Rectangle_3" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>19585</X>
+                            <Y>1120</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>platform_test0</value>
+                        </ArchetypeId>
+                        <ActivatedBySecondaryObjectIds Type="string">
+                            <value>0,0,0,0</value>
+                        </ActivatedBySecondaryObjectIds>
+                        <SecondaryObjectId Type="string">
+                            <value>0</value>
+                        </SecondaryObjectId>
+                        <ActivatesObjectWithSecondaryId Type="string">
+                            <value>0</value>
+                        </ActivatesObjectWithSecondaryId>
+                        <Position Type="string">
+                            <value>97.925,-5.6</value>
+                        </Position>
+                        <Rotation Type="string">
+                            <value />
+                        </Rotation>
+                        <Width>2999</Width>
+                        <Height>679</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>14.995,3.395,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="box" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>17214</X>
+                            <Y>656</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>box_0</value>
+                        </ArchetypeId>
+                        <ActivatedBySecondaryObjectIds Type="string">
+                            <value>0,0,0,0</value>
+                        </ActivatedBySecondaryObjectIds>
+                        <SecondaryObjectId Type="string">
+                            <value>0</value>
+                        </SecondaryObjectId>
+                        <ActivatesObjectWithSecondaryId Type="string">
+                            <value>0</value>
+                        </ActivatesObjectWithSecondaryId>
+                        <Position Type="string">
+                            <value>86.07,-3.28</value>
+                        </Position>
+                        <Rotation Type="string">
+                            <value />
+                        </Rotation>
+                        <Width>257</Width>
+                        <Height>244</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>1.285,1.22,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="Rectangle_7" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>3544</X>
+                            <Y>-1937</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>platform_test0</value>
+                        </ArchetypeId>
+                        <ActivatedBySecondaryObjectIds Type="string">
+                            <value>0,0,0,0</value>
+                        </ActivatedBySecondaryObjectIds>
+                        <SecondaryObjectId Type="string">
+                            <value>0</value>
+                        </SecondaryObjectId>
+                        <ActivatesObjectWithSecondaryId Type="string">
+                            <value>0</value>
+                        </ActivatesObjectWithSecondaryId>
+                        <Position Type="vec2">
+                            <value>17.72,9.685</value>
+                        </Position>
+                        <Rotation Type="float">
+                            <value>0</value>
+                        </Rotation>
+                        <Width>896</Width>
+                        <Height>2496</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>4.48,12.48,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="Rectangle_11" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>320</X>
+                            <Y>128</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>platform_test0</value>
+                        </ArchetypeId>
+                        <ActivatedBySecondaryObjectIds Type="string">
+                            <value>0,0,0,0</value>
+                        </ActivatedBySecondaryObjectIds>
+                        <SecondaryObjectId Type="string">
+                            <value>0</value>
+                        </SecondaryObjectId>
+                        <ActivatesObjectWithSecondaryId Type="string">
+                            <value>0</value>
+                        </ActivatesObjectWithSecondaryId>
+                        <Position Type="vec2">
+                            <value>1.6,-0.64</value>
+                        </Position>
+                        <Rotation Type="float">
+                            <value>0</value>
+                        </Rotation>
+                        <Width>1728</Width>
+                        <Height>384</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>8.64,1.92,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="Button_platform" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>17782</X>
+                            <Y>1185</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>arc_2</value>
+                        </ArchetypeId>
+                        <ActivatedBySecondaryObjectIds Type="string">
+                            <value>0,0,0,0</value>
+                        </ActivatedBySecondaryObjectIds>
+                        <SecondaryObjectId Type="string">
+                            <value>0</value>
+                        </SecondaryObjectId>
+                        <ActivatesObjectWithSecondaryId Type="string">
+                            <value>0</value>
+                        </ActivatesObjectWithSecondaryId>
+                        <Position Type="string">
+                            <value>88.91,-5.925</value>
+                        </Position>
+                        <Rotation Type="string">
+                            <value />
+                        </Rotation>
+                        <Width>614</Width>
+                        <Height>541</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>3.07,2.705,1</value>
+                        </Scale>
+                    </Item>
+                    <Item d6p1:type="RectangleItem" Name="Hero_31" xmlns:d6p1="http://www.w3.org/2001/XMLSchema-instance">
+                        <PositionOrig>
+                            <X>16816</X>
+                            <Y>52</Y>
+                        </PositionOrig>
+                        <ArchetypeId Type="string">
+                            <value>arc_1</value>
+                        </ArchetypeId>
+                        <ActivatedBySecondaryObjectIds Type="string">
+                            <value>0,0,0,0</value>
+                        </ActivatedBySecondaryObjectIds>
+                        <SecondaryObjectId Type="string">
+                            <value>0</value>
+                        </SecondaryObjectId>
+                        <ActivatesObjectWithSecondaryId Type="string">
+                            <value>0</value>
+                        </ActivatesObjectWithSecondaryId>
+                        <Position Type="string">
+                            <value>84.08,-0.26</value>
+                        </Position>
+                        <Rotation Type="string">
+                            <value />
+                        </Rotation>
+                        <Width>250</Width>
+                        <Height>491</Height>
+                        <FillColor>
+                            <R>192</R>
+                            <G>0</G>
+                            <B>192</B>
+                            <A>145</A>
+                            <PackedValue>2445279424</PackedValue>
+                        </FillColor>
+                        <Scale Type="string">
+                            <value>1.25,2.455,1</value>
+                        </Scale>
+                    </Item>
+                </Items>
+            </Layer>
+        </Layers>
+    </Level>
+    <EditorRelated>
+        <NextItemNumber>31</NextItemNumber>
+        <ContentrootFolder>C:\</ContentrootFolder>
+    </EditorRelated>
+</root>

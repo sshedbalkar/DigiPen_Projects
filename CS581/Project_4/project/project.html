@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="new.css">
+<title>Minesweeper project</title>
+</head>
+
+<body>
+<center>
+<h1>Programming assignment</h1>
+</h2>
+</center>
+<ul>
+	<li><a href="handout.txt">Handout</a>
+	<li> <a href="example.from.handout.txt">example.from.handout.txt</a> - is safe (1,2) in "field2" is solved with all debug information
+	<li> <a href="driver.output.txt">driver.output.txt</a> - "driver.cpp" output
+	<li> <a href="driver.debug.output.txt">driver.debug.output.txt</a> - "driver.cpp" output with debug information
+	<li> browse <a href=".">project folder</a>
+	<li> <a href="project.zip">zipped project</a>
+	<li> <a href="part2.anyfield.win.exe">part2.anyfield.win.exe (Windows 32bit)</a>, 
+		<a href="part2.anyfield.lin.exe">part2.anyfield.lin.exe (Linux 32bit)</a> 
+		- my implementation of part2, you may figure out some of my "design decision" for part 2. 
+		Nothing fancy though. Run with a single argument: 
+	<ul>
+	<li> <tt>part2.anyfield.exe field4_part2</tt> - solvable with no guessing
+	<li> <tt>part2.anyfield.exe field2_part2</tt> - solvable with no guessing
+	<li> <tt>part2.anyfield.exe field6_part2</tt> - some guessing has to occure, my average is 7-8 busts (wrong guesses). 
+			I implemented very simple probabilistic algorithm for guessing, if guessing "around" a square, choose square that has smallest probability
+			of having a mine in adjacent unknown locations. Notice that in the beginning when there is no information at all, guessing should be done 
+			absolutely randomely.
+	<li> <tt>part2.anyfield.exe field_part2</tt> - some guessing has to occure, my average is 1-3 busts (wrong guesses).
+	</ul>
+</ul>	
+<hr>
+</body>
+</html>

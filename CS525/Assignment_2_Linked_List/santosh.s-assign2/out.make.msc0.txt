@@ -1,0 +1,7 @@
+cl -Femsc0.exe driver.c spvector.c /MDd /W4 /Za /Zc:forScope /nologo /D_CRT_SECURE_NO_DEPRECATE 
+driver.c
+C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\sal.h(108) : warning C4001: nonstandard extension 'single line comment' was used
+driver.c(640) : warning C4113: 'void (*)()' differs in parameter lists from 'void (*)(void)'
+spvector.c
+C:\Program Files\Microsoft Visual Studio 9.0\VC\INCLUDE\sal.h(108) : warning C4001: nonstandard extension 'single line comment' was used
+Generating Code...

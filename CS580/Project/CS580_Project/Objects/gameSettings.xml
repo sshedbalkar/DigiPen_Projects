@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Compositions
+
+///////////////////////
+Component IDs:
+		CT_None						= 0
+		CT_Transform,				= 1
+		CT_Camera,					= 2
+		CT_Sprite,					= 3
+		CT_Body,					= 4
+		CT_Controller,				= 5
+		CT_Component,				= 6
+		CT_Composition,				= 7
+		CT_System,					= 8
+		CT_EventDispatcher,			= 9
+		CT_Core,					= 10
+		CT_MovieClip,				= 11
+		CT_HUD						= 12
+		CT_Boid						= 13
+		
+Shape IDs:
+		Sid_Circle,					= 0
+		Sid_Box,					= 1
+-->
+
+<root>
+	<Settings
+		fps="60"
+	/>
+	<Textures>
+		<Texture id="t_1" name="Block_5" url="../Assets/images_arrow2.png" />
+	</Textures>
+	<Shaders>
+		<Shader id="s_1" name="Basic" url="../Shaders/Multiplicative.fx" />
+		<Shader id="s_2" name="Debug" url="../Shaders/Debug.fx" debug="1" />
+		<Shader id="s_3" name="test1" url="../Shaders/Shader1.fx" />
+		<Shader id="s_4" name="Y shade" url="../Shaders/HalfShade.fx" />
+	</Shaders>
+	<Archetypes>
+		<Archetype id="a_1">
+			<Composition id="b" name="MainCamera">
+				<Components>
+					<Component id="cm_4" type="1">
+						<Data position="0,0,10" />
+					</Component>
+					<Component id="cm_6" type="2">
+						<Data lookAt="0,0,0" up="0,1,0" />
+					</Component>
+					<!--
+					<Component id="cm_3" type="5">
+						<Data speed="10.0" />
+					</Component>
+					-->
+					
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_2">
+			<Composition id="d" name="Boid">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_1" color="0,0,1,0" shader="s_1" position="0,0,0" size="25,25" />
+					</Component>
+					<Component id="cm_3" type="13">
+						<Data />
+					</Component>
+					<!--
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="10,300,10" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+					-->
+				</Components>
+			</Composition>
+		</Archetype>
+		<Archetype id="a_3">
+			<Composition id="d" name="Boid">
+				<Components>
+					<Component id="cm_1" type="1">
+						<Data position="0,0,0" rotation="0,0,0" scale="1,1,1"/>
+					</Component>
+					<Component id="cm_2" type="3">
+						<Data sprite="t_1" color="0,0,1,0" shader="s_1" position="0,0,0" size="15,15" />
+					</Component>
+					<!--
+					<Component id="cm_4" type="4">
+						<Data shape="1" extents="10,300,10" mass="0" resitution="0.3" friction="0.3" damping="0.1" />
+					</Component>
+					-->
+				</Components>
+			</Composition>
+		</Archetype>
+	</Archetypes>
+	
+	<Compositions>
+		<Composition id="cs_1" archetype="a_1" position="0,0,-50"/>
+		<!--
+		<Composition id="cs_2" archetype="a_3" position="0,0,0"/>
+		-->
+	</Compositions>
+</root>

@@ -1,0 +1,5 @@
+Extras in the Platformer game implementation:
+1. Particle Effects: Fireball, Explosion, radial
+2. Hero can jump in the air once
+3. 3 Levels
+4. Beacon object, which is the gate to the next level (The hero dies if he collides with the objects that the beacon emits)

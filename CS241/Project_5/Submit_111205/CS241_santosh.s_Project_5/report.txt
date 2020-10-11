@@ -1,0 +1,22 @@
+The functions and data structures involved in the Modeling and Phong Lighting and Gouroud Shading project are:
+
+Render.cpp:
+Datastructures:
+Shade		It has been modified to include the Normal information of the pixel
+
+Functions:
+ScanConvert()		This has been modified to interpolate the normals between vertices for each pixel
+SetPixel()			This has been modified to calculate Phong lighting and before setting the pixel
+
+
+
+P5-scene.cpp:
+Functions:
+drawWorld()		Creates a world of 6 houses in 2x3 formation on ground
+drawHouse()		Creates a house using the components
+drawBlock()		Draws body of the house
+drawRoof()		Draws roof of the house
+drawBase()		Draws a platform for the house to be placed
+drawDoor()		Creates door for the house
+drawWindows()	Creates 2 windows for the house
+drawGround()	Draws ground for the 6 houses

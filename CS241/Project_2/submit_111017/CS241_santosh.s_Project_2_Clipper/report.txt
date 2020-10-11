@@ -1,0 +1,7 @@
+The functions and data structures involved in the Clipper project are as follow:
+
+EPSILON: this is a small value(0.001) used to check for small roundoff errors for float variables
+planeEqn: It's an array of type Vector4D used to store the 6 boundary plane equations at one place
+planeClip(): It is a function which clips a poly against one specific boundary plane.
+PolyClip(): It is the function which clips a poly against 6 clipping planes, it internally calls planeClip() 6 times with the 6 plane equations
+evaluate(): It evaluates a Vector4D point against a plane equation and returns the signed perpendicular distance of the point from the plane

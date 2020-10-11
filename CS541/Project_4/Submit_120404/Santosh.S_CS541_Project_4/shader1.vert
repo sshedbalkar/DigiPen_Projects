@@ -1,0 +1,16 @@
+///////////////////////////////////////////////////////////////////////
+// Pass 1 vertex shader
+//
+// Gary Herron
+//
+// Copyright © 2012 DigiPen Institute of Technology
+////////////////////////////////////////////////////////////////////////
+
+varying vec4 position;
+
+void main()
+{
+	// calculate depth of light penetration
+	gl_Position = ftransform();
+	position = gl_Position;
+}

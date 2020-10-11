@@ -1,0 +1,58 @@
+Started Wye
+Initializing...
+Graphics inited
+Set Main Camera
+Camera: Look: [0, 0, 0], Up: [0, 1, 0]
+removed Main Camera
+Loaded Texture: ..\assets\bullet12.png
+Loaded Texture: ..\assets\bomb121.png
+Loaded Texture: ..\assets\heart1.png
+Loaded Texture: ..\assets\cursor1.png
+Loaded Texture: ..\assets\cursor2.png
+Loaded Texture: ..\assets\wall.jpg
+Loaded Texture: ..\assets\wall4.jpg
+Loaded Texture: ..\assets\block11.jpg
+Loaded Texture: ..\assets\block12.jpg
+Loaded Texture: ..\assets\block13.jpg
+Loaded Texture: ..\assets\crown.png
+Loaded Texture: ..\assets\block15.jpg
+Loaded Texture: ..\assets\block16.jpg
+Loaded Texture: ..\assets\block172.png
+Loaded Texture: ..\assets\bullet2.png
+Loaded Texture: ..\assets\bomb2.png
+Loaded Texture: ..\assets\alphacircle.png
+Loaded Texture: ..\assets\controls.png
+Loaded Texture: ..\assets\gold-coin.png
+Loaded Texture: ..\assets\gamelost.png
+Loaded Texture: ..\assets\gamewin.png
+Loaded Texture: ..\assets\green-key.png
+Loading Shader: ../Shaders/Multiplicative.fx
+Loading Shader: ../Shaders/Debug.fx
+Loading Shader: ../Shaders/Shader1.fx
+Loading Shader: ../Shaders/HalfShade.fx
+Creating map of: 32x24
+Extents: [12.5, 300, 12.5]
+Extents: [12.5, 300, 12.5]
+Extents: [400, 12.5, 12]
+Extents: [400, 12.5, 12]
+MovieClip: Frames: 3
+Controller: Speed: 200
+Created Key: parent: 866
+Key x: 10, y: 3
+Created Key: parent: 2114
+Key x: 28, y: 7
+Created Key: parent: 5312
+Key x: 22, y: 21
+Creating Compositions-----------------------:
+---------cs_1--------
+Set Main Camera
+New Obj Created: Arch: a_1, Pos: [0, 0, -50], Rot: [0, 0, 0], Scale: [1, 1, 1]
+Camera: Look: [0, 0, 0], Up: [0, 1, 0]
+---------cs_3--------
+New Obj Created: Arch: a_13, Pos: [-400, 350, 1], Rot: [0, 0, 0], Scale: [1, 1, 1]
+Finished-----------------------------------
+Activating window...
+Starting Game loop...
+New Obj Created: Arch: a_14, Pos: [-400, 300, 0], Rot: [0, 0, 0], Scale: [1, 1, 1]
+Destroying Systems...
+RETURNING TO WINDOWS...

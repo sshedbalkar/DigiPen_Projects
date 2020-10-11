@@ -1,0 +1,43 @@
+﻿Build started 10/12/2011 10:41:42 PM.
+     1>Project "E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\CS529_Project_3_Asteroids.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\CS529_Project_3_Asteroids.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"e:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Include" /I..\Alpha_Engine\include /Iinclude /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MD /Zp4 /GS /arch:SSE2 /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\GameState_Asteroids.cpp src\GameStateMgr.cpp src\LineSegment2D.cpp src\main.cpp src\Math2D.cpp src\Matrix2D.cpp src\Vector2D.cpp
+         Vector2D.cpp
+         Matrix2D.cpp
+         Math2D.cpp
+         main.cpp
+         LineSegment2D.cpp
+         GameStateMgr.cpp
+         GameState_Asteroids.cpp
+     1>e:\work_work\projects\cs529\cs529_project_3\part_2\cs529 project 3 - asteroids template\src\gamestate_asteroids.cpp(271): warning C4101: 'scale' : unreferenced local variable
+     1>e:\work_work\projects\cs529\cs529_project_3\part_2\cs529 project 3 - asteroids template\src\gamestate_asteroids.cpp(271): warning C4101: 'rot' : unreferenced local variable
+     1>e:\work_work\projects\cs529\cs529_project_3\part_2\cs529 project 3 - asteroids template\src\gamestate_asteroids.cpp(271): warning C4101: 'trans' : unreferenced local variable
+         Generating Code...
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\CS529_Project_3_Asteroids.exe" /NOLOGO /LIBPATH:"e:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\\Lib\x86" /LIBPATH:"E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\\..\Alpha_Engine\lib" d3d9.lib dinput8.lib dxguid.lib d3dx9d.lib winmm.lib user32.lib comctl32.lib shell32.lib gdi32.lib advapi32.lib Alpha_Engine.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CS529_Project_3_Asteroids.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\CS529_Project_3_Asteroids.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\CS529_Project_3_Asteroids.lib" /MACHINE:X86 Debug\GameState_Asteroids.obj
+         Debug\GameStateMgr.obj
+         Debug\LineSegment2D.obj
+         Debug\main.obj
+         Debug\Math2D.obj
+         Debug\Matrix2D.obj
+         Debug\Vector2D.obj
+     1>Alpha_Engine.lib(AEFrameRateController.obj) : warning LNK4204: 'E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Alpha_Engine.lib(AEGraphics.obj) : warning LNK4204: 'E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Alpha_Engine.lib(AEInput.obj) : warning LNK4204: 'E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Alpha_Engine.lib(AEMath.obj) : warning LNK4204: 'E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Alpha_Engine.lib(AESystem.obj) : warning LNK4204: 'E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Alpha_Engine.lib(AEUtil.obj) : warning LNK4204: 'E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+     1>Alpha_Engine.lib(AEVec2.obj) : warning LNK4204: 'E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\vc100.pdb' is missing debugging information for referencing module; linking object as if no debug info
+         CS529_Project_3_Asteroids.vcxproj -> E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\CS529_Project_3_Asteroids.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\Debug\CS529_Project_3_Asteroids.exe;#1" /manifest Debug\CS529_Project_3_Asteroids.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\CS529_Project_3_Asteroids.unsuccessfulbuild".
+         Touching "Debug\CS529_Project_3_Asteroids.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Projects\CS529\CS529_Project_3\Part_2\CS529 Project 3 - Asteroids Template\CS529_Project_3_Asteroids.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.23

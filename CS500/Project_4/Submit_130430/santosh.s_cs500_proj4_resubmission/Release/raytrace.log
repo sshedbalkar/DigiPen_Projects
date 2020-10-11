@@ -1,0 +1,45 @@
+﻿Build started 4/29/2013 9:05:04 PM.
+     1>Project "E:\Work_Work\Projects\CS500\Project_4\Submit_130430\santosh.s_cs500_proj4_resubmission\raytrace.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\raytrace.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Python32\include /I.\ /Zi /nologo /W3 /WX- /O2 /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt hit.cpp Lighting.cpp main.cpp raytrace.cpp Shape.cpp Utility.cpp vector.cpp
+         hit.cpp
+         Lighting.cpp
+     1>Lighting.cpp(21): warning C4244: 'initializing' : conversion from 'double' to 'unsigned int', possible loss of data
+         main.cpp
+     1>main.cpp(70): warning C4244: 'initializing' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>main.cpp(80): warning C4244: 'initializing' : conversion from 'double' to 'unsigned int', possible loss of data
+     1>main.cpp(95): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>main.cpp(137): warning C4018: '<' : signed/unsigned mismatch
+     1>main.cpp(152): warning C4101: 'Xi' : unreferenced local variable
+     1>main.cpp(153): warning C4101: 'Xi' : unreferenced local variable
+         raytrace.cpp
+     1>raytrace.cpp(80): warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+     1>raytrace.cpp(81): warning C4244: '=' : conversion from 'const double' to 'int', possible loss of data
+         Shape.cpp
+         Utility.cpp
+         vector.cpp
+     1>vector.cpp(34): warning C4172: returning address of local variable or temporary
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Work_Work\Projects\CS500\Project_4\Submit_130430\santosh.s_cs500_proj4_resubmission\\raytrace.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Python32\libs kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\raytrace.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Work_Work\Projects\CS500\Project_4\Submit_130430\santosh.s_cs500_proj4_resubmission\raytrace.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"E:\Work_Work\Projects\CS500\Project_4\Submit_130430\santosh.s_cs500_proj4_resubmission\\raytrace.lib" Release\hit.obj
+         Release\Lighting.obj
+         Release\main.obj
+         Release\raytrace.obj
+         Release\Shape.obj
+         Release\Utility.obj
+         Release\vector.obj
+         Generating code
+         Finished generating code
+         raytrace.vcxproj -> E:\Work_Work\Projects\CS500\Project_4\Submit_130430\santosh.s_cs500_proj4_resubmission\\raytrace.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\Work_Work\Projects\CS500\Project_4\Submit_130430\santosh.s_cs500_proj4_resubmission\\raytrace.exe;#1" /manifest Release\raytrace.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\raytrace.unsuccessfulbuild".
+         Touching "Release\raytrace.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Projects\CS500\Project_4\Submit_130430\santosh.s_cs500_proj4_resubmission\raytrace.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.84

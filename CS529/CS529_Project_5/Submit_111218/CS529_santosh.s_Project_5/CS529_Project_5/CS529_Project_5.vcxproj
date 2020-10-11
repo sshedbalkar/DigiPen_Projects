@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{850E6352-AA6C-4511-9635-F9EB7773E31A}</ProjectGuid>
+    <RootNamespace>CS529_Project_5</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(DXSDK_DIR)Include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(DXSDK_DIR)Include\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>dxerr.lib;d3dx9d.lib;d3d9.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>dxerr.lib;d3dx9d.lib;d3d9.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AI_1.cpp" />
+    <ClCompile Include="Archetype.cpp" />
+    <ClCompile Include="BasicEffect.cpp" />
+    <ClCompile Include="Block.cpp" />
+    <ClCompile Include="Body.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="BombEffect.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="CollisionMap.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Composition.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Core.cpp" />
+    <ClCompile Include="DebugDraw.cpp" />
+    <ClCompile Include="DebugPrint.cpp" />
+    <ClCompile Include="DebugTools.cpp" />
+    <ClCompile Include="EventDispatcher.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="FilePath.cpp" />
+    <ClCompile Include="GameData.cpp" />
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="GameUtility.cpp" />
+    <ClCompile Include="Gold.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="Key.cpp" />
+    <ClCompile Include="LevelLoader.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="MessageHandler.cpp" />
+    <ClCompile Include="MovieClip.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Physics.cpp" />
+    <ClCompile Include="Precompiled.cpp" />
+    <ClCompile Include="Resolution.cpp" />
+    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="WindowsSystem.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="XMLSerialization.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AI_1.h" />
+    <ClInclude Include="Archetype.h" />
+    <ClInclude Include="BasicEffect.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="BombEffect.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="CollisionMap.h" />
+    <ClInclude Include="Block.h" />
+    <ClInclude Include="Body.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="ComponentCreator.h" />
+    <ClInclude Include="ComponentTypeIds.h" />
+    <ClInclude Include="Composition.h" />
+    <ClInclude Include="Containers.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Core.h" />
+    <ClInclude Include="DebugDiagnostic.h" />
+    <ClInclude Include="DebugDraw.h" />
+    <ClInclude Include="DebugPrint.h" />
+    <ClInclude Include="DebugTools.h" />
+    <ClInclude Include="DirectXIncludes.h" />
+    <ClInclude Include="Engine.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="FastDelegate.h" />
+    <ClInclude Include="FastDelegateBind.h" />
+    <ClInclude Include="FilePath.h" />
+    <ClInclude Include="GameData.h" />
+    <ClInclude Include="GameLogic.h" />
+    <ClInclude Include="GameUtility.h" />
+    <ClInclude Include="Gold.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Hero.h" />
+    <ClInclude Include="Key.h" />
+    <ClInclude Include="LevelLoader.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="EventDispatcher.h" />
+    <ClInclude Include="MessageHandler.h" />
+    <ClInclude Include="MovieClip.h" />
+    <ClInclude Include="MsgIds.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectLinkedList.h" />
+    <ClInclude Include="Physics.h" />
+    <ClInclude Include="Precompiled.h" />
+    <ClInclude Include="rapidxml.hpp" />
+    <ClInclude Include="rapidxml_iterators.hpp" />
+    <ClInclude Include="rapidxml_print.hpp" />
+    <ClInclude Include="rapidxml_utils.hpp" />
+    <ClInclude Include="Resolution.h" />
+    <ClInclude Include="Serialization.h" />
+    <ClInclude Include="ShaderIds.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="VertexTypes.h" />
+    <ClInclude Include="VMath.h" />
+    <ClInclude Include="WindowsIncludes.h" />
+    <ClInclude Include="WindowsSystem.h" />
+    <ClInclude Include="XMLSerialization.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Shaders\Multiplicative.fx" />
+    <None Include="..\Shaders\Debug.fx" />
+    <None Include="..\Shaders\HalfShade.fx" />
+    <None Include="..\Shaders\Shader1.fx" />
+    <None Include="Additive.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,9 @@
+framework.o: framework.cpp framework.h geomlib.h transformation.h \
+ scenelib.h
+geomlib.o: geomlib.cpp geomlib.h
+scenelib.o: scenelib.cpp framework.h geomlib.h transformation.h \
+ scenelib.h
+transformation.o: transformation.cpp framework.h geomlib.h \
+ transformation.h scenelib.h
+scene.o: scene.cpp framework.h geomlib.h transformation.h scenelib.h
+render.o: render.cpp framework.h geomlib.h transformation.h scenelib.h

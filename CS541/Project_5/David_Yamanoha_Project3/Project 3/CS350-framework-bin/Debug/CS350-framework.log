@@ -1,0 +1,32 @@
+﻿Build started 4/20/2012 3:13:52 PM.
+     1>Project "C:\Users\Santosh\Desktop\David_Yamanoha_Project3\Project 3\CS350-framework\CS350-framework.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "..\CS350-framework-bin\Debug\CS350-framework.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Santosh\Desktop\David_Yamanoha_Project3\Project 3\CS350-framework\..\CS350-framework-bin\Debug\CS350-framework.exe) does not match the Linker's OutputFile property value (C:\Users\Santosh\Desktop\David_Yamanoha_Project3\Project 3\CS350-framework.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\CS350-framework.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib glu32.lib opengl32.lib glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"..\CS350-framework-bin\Debug\CS350-framework.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"..\CS350-framework-bin\Debug\framework.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\CS350-framework-bin\Debug\CS350-framework.lib" /MACHINE:X86 "..\CS350-framework-bin\Debug\CS350-framework.exe.embed.manifest.res"
+         "..\CS350-framework-bin\Debug\BSPTools.obj"
+         "..\CS350-framework-bin\Debug\Camera.obj"
+         "..\CS350-framework-bin\Debug\framework.obj"
+         "..\CS350-framework-bin\Debug\geomlib-advanced.obj"
+         "..\CS350-framework-bin\Debug\geomlib.obj"
+         "..\CS350-framework-bin\Debug\KDTools.obj"
+         "..\CS350-framework-bin\Debug\render.obj"
+         "..\CS350-framework-bin\Debug\scene.obj"
+         "..\CS350-framework-bin\Debug\scenelib.obj"
+         "..\CS350-framework-bin\Debug\transformation.obj"
+         "..\CS350-framework-bin\Debug\CoordinateSystem.obj"
+         "..\CS350-framework-bin\Debug\Matrix4.obj"
+         "..\CS350-framework-bin\Debug\Plane.obj"
+         "..\CS350-framework-bin\Debug\Quaternion.obj"
+         "..\CS350-framework-bin\Debug\Vector4.obj"
+     1>LINK : fatal error LNK1104: cannot open file 'glut32.lib'
+     1>Done Building Project "C:\Users\Santosh\Desktop\David_Yamanoha_Project3\Project 3\CS350-framework\CS350-framework.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.22

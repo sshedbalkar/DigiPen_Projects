@@ -1,0 +1,4 @@
+g++ driver-nocompile2.cpp vector.cpp
+driver-nocompile2.cpp: In function 'int main(int, char**)':
+driver-nocompile2.cpp:8: error: lvalue required as left operand of assignment
+make: *** [nocompile2] Error 1

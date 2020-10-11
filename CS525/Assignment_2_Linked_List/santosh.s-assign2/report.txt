@@ -1,0 +1,70 @@
+grading 525 A santosh.s
+== SUBMISSION =============================
+10 
+== COMPILE ================================
+"make gcc0 &> out.make.gcc0.txt"	gcc0 OK.	8/8
+"make bcc0 &> out.make.bcc0.txt"	bcc0 OK.	8/8
+"make msc0 &> out.make.msc0.txt"	msc0 OK.	8/8
+"make bcc_cg &> out.make.bcc_cg.txt"	bcc_cg OK.	0/0
+== RUNTIME ================================
+test 0 (using bcc0.exe): ./bcc0.exe 0  >student.out0
+OK  (2/2 points)
+test 1 (using bcc0.exe): ./bcc0.exe 1  >student.out1
+OK  (2/2 points)
+test 2 (using gcc0.exe): ./gcc0.exe 2  >student.out2
+OK  (2/2 points)
+test 3 (using bcc0.exe): ./bcc0.exe 3  >student.out3
+OK  (3/3 points)
+test 4 (using bcc0.exe): ./bcc0.exe 4  >student.out4
+OK  (3/3 points)
+test 5 (using gcc0.exe): ./gcc0.exe 5  >student.out5
+OK  (3/3 points)
+test 6 (using gcc0.exe): ./gcc0.exe 6  >student.out6
+OK  (3/3 points)
+test 7 (using bcc0.exe): ./bcc0.exe 7  >student.out7
+OK  (3/3 points)
+test 8 (using msc0.exe): ./msc0.exe 8  >student.out8
+OK  (3/3 points)
+test 9 (using msc0.exe): ./msc0.exe 9  >student.out9
+OK  (3/3 points)
+test 10 (using bcc0.exe): ./bcc0.exe 10  >student.out10
+OK  (3/3 points)
+test 11 (using bcc0.exe): ./bcc0.exe 11  >student.out11
+OK  (3/3 points)
+test 12 (using gcc0.exe): ./gcc0.exe 12  >student.out12
+OK  (3/3 points)
+test 13 (using msc0.exe): ./msc0.exe 13  >student.out13
+OK  (3/3 points)
+test 14 (using gcc0.exe): ./gcc0.exe 14  >student.out14
+OK  (3/0 points)
+test 15 (using bcc0.exe): ./bcc0.exe 15  >student.out15
+OK  (3/0 points)
+test 16 (using msc0.exe): ./msc0.exe 16  >student.out16
+OK  (3/0 points)
+test 17 (using bcc0.exe): ./bcc0.exe 17  >student.out17
+OK  (3/0 points)
+test 18 (using bcc0.exe): ./bcc0.exe 18  >student.out18
+OK  (4/0 points)
+test 19 (using gcc0.exe): ./gcc0.exe 19  >student.out19
+OK  (4/0 points)
+test 20 (using gcc0.exe): ./gcc0.exe 20  >student.out20
+OK  (5/0 points)
+test 21 (using gcc0.exe): ./gcc0.exe 21  >student.out21
+OK  (5/0 points)
+test 22 (using msc0.exe): ./msc0.exe 22  >student.out22
+OK  (3/0 points)
+test 23 (using gcc0.exe): ./gcc0.exe 23  >student.out23
+OK  (2/0 points)
+test 24 (using bcc0.exe): ./bcc0.exe 24  >student.out24
+OK  (20/0 points)
+test 125 (using bcc_cg.exe): ./bcc_cg.exe 25  >student.out25
+bcc_cg.cgl wasn't found
+OK  (15/15 points)
+
+===========================================
+GRADE before code quality check +[0..12] is 143
+===========================================
+Grading script usage "/home/dvolper/bin2/grading.1.pl 525 A santosh.s".
+your code (spvector.c spvector.h r.txt) should be in A/santosh.s/ relative to
+(Makefile driver.c bcc_cg.cgi out0 out1 out2 out3 out4 out5 out6 out7 out8 out9 out10 out11 out12 out13 out14 out15 out16 out17 out18 out19 out20 out21 out22 out23 out24).
+NOTES:

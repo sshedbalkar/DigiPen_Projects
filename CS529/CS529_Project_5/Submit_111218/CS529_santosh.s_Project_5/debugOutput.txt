@@ -1,0 +1,6 @@
+Started Wye
+Initializing...
+Graphics inited
+Set Main Camera
+Camera: Look: [0, 0, 0], Up: [0, 1, 0]
+Cant open file: ../Objects/gameSettings.xml

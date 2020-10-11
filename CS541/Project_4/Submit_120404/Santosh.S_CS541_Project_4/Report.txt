@@ -1,0 +1,22 @@
+Scene.cpp:
+1. Implements and stores the Shadow Transformation in the texture matrix GL_TEXTURE
+
+shader1.vert:
+1. Calculates the depth of light's penetration for each vertex
+
+shader1.frag:
+1. Interpolates the depth of light's penetration value into the scene to each pixel and writes it into the shadow map
+
+shader2.vert:
+1. Reads the Shadow Transformation from the texture matrix gl_TextureMatrix[0]
+2. Calculates the Shadow Coordinate at each vertex using the shadow transformation
+3. Calculates Phong lighting parameters
+
+shader2.frag:
+1. Calulates the coordinate used to lookup the light's depth from the shadow map
+2. Calculates pixel depth
+3. Compares Light depth and Pixel depth to see if the pixel lies within the shadow region or not
+4. If the pixel is in shadow then returns the ambient light value if not then does the Phong lighting calculation on that pixel
+
+To Remove Shadow Acne:
+1. A small quantity (0.0001) is added to Light depth value during comparison to account for the floating point comaprison errors and to account for the shadow acne

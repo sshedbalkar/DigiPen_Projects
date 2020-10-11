@@ -1,0 +1,135 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: bumpmap.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// DEFINES //
+/////////////
+#define NUM_LIGHTS 3
+
+/////////////
+// GLOBALS //
+/////////////
+Texture2D shaderTextures[2];
+SamplerState SampleType;
+
+cbuffer LightBuffer
+{
+	float4 diffuseColor[NUM_LIGHTS];
+	float4 ambientColor;
+    float specularPower;
+    float4 specularColor;
+};
+
+cbuffer LightPositionBuffer
+{
+	float4 lightPosition[NUM_LIGHTS];
+};
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+   	float3 normal : NORMAL;
+	float3 tangent : TANGENT;
+	float3 binormal : BINORMAL;	
+	float3 viewDirection : TEXCOORD1;
+	float4 worldPosition : POSITION;
+	float3 lightPos[NUM_LIGHTS]: TEXCOORD2;	
+};
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 BumpMapPixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    float4 bumpMap;
+    float3 bumpNormal;
+    float3 lightDir;
+    float lightIntensity[NUM_LIGHTS];
+    float4 color;
+
+	float3 reflection;
+	int i;
+	float d[NUM_LIGHTS];
+
+
+    // Sample the texture pixel at this location.
+    textureColor = shaderTextures[0].Sample(SampleType, input.tex*3);
+	
+    // Sample the pixel in the bump map.
+    bumpMap = shaderTextures[1].Sample(SampleType, input.tex*3);
+
+    // Expand the range of the normal value from (0, +1) to (-1, +1).
+    bumpMap = (bumpMap * 2.0f) - 1.0f;
+    
+    // Calculate the normal from the data in the bump map.
+    bumpNormal = input.normal + bumpMap.x * input.tangent + bumpMap.y * input.binormal;
+	
+    // Normalize the resulting bump normal.
+    bumpNormal = normalize(bumpNormal);
+
+	// Set the default output color to the ambient light value for all pixels.
+    color = float4(0.0f, 0.0f, 0.0f, 0.0f);
+
+	float3 attV = float3(0.0f, 1.0f, 0.0f);
+	
+    // Determine the light positions based on the position of the lights and the position of the vertex in the world.
+	for(i = 0 ; i < NUM_LIGHTS ; i++)
+	{
+		input.lightPos[i].xyz = lightPosition[i].xyz - input.worldPosition.xyz;	
+		d[i] = length(input.lightPos[i]);
+		input.lightPos[i] = normalize(input.lightPos[i]);
+	}
+
+	// Calculate the different amounts of light on this pixel based on the positions of the lights.
+	for(i = 0 ; i < NUM_LIGHTS ; i++)
+	{
+		lightIntensity[i] = saturate(dot(bumpNormal, input.lightPos[i]));
+	}
+
+	float4 diff, spec;
+
+	diff = float4(0.0f, 0.0f, 0.0f, 0.0f);
+	spec = float4(0.0f, 0.0f, 0.0f, 0.0f);
+
+	for(i = 0 ; i < NUM_LIGHTS ; i++)
+	{
+		if(lightIntensity[i] > 0.0f)
+		{
+			// Determine the final diffuse color based on the diffuse color and the amount of light intensity.
+			diff = (diffuseColor[i] * lightIntensity[i]);			
+
+			// Saturate the ambient and diffuse color.
+			diff = saturate(diff);
+
+			// Calculate the reflection vector based on the light intensity, normal vector, and light direction.
+			reflection = normalize(2 * lightIntensity[i] * bumpNormal - input.lightPos[i]); 
+			
+			// Determine the amount of specular light based on the reflection vector, viewing direction, and specular power.
+			spec = pow(saturate(dot(reflection, input.viewDirection)), specularPower);			
+		}
+
+		float att = 1.0f / dot(attV, float3(1.0f, d[i], d[i]*d[i]));				
+
+		diff = diff * att;
+		spec = spec * att;
+		
+		color += (diff + spec);
+	}
+
+	color += ambientColor;
+
+	// Add the specular component last to the output color.
+    color = saturate(color);
+
+	// Multiply the texture pixel and the input color to get the textured result.
+    color = color * textureColor;
+
+	return color;
+}

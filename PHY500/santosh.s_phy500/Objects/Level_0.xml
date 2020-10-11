@@ -1,0 +1,10 @@
+<root>
+  <items>
+    <!--<item archetype="GOC_Type_Wall">
+      <GlobalID>1</GlobalID>
+      <Position>0,-5,0</Position>
+      <Scale>100.0000,100.0000,0.5000</Scale>
+      <Orientation>0.7071,0.0000,0.0000,0.7071</Orientation>
+    </item>-->
+  </items>
+</root>

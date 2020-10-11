@@ -1,0 +1,30 @@
+The functions and datat structures involved in the implementation of the project are as follow:
+
+For part 1, the implementation of the Transformation library:
+1. Vector4D: defines a pont in the 4 dimension Homogeneous co-ordinate system.
+2. Matrix4x4: defines a matrix of 4x4 size of floating point numbers.
+3. current: It is a matrix of 4x4 dimension (Matrix4x4) holding the result of all the 3D transformation thus-far.
+4. inverse: It is the inverse of the 'current' matrix, used to nullify the transformations of the viewing matrix.
+5. matrixStack: It is a vector of type Matrix4x4 used to provide temporary storage facility to aid the calculations.
+
+The functions involved are:
+1. Identity(): sets the 'current' matrix to idrntity matrix, it's current values are lost
+2. RotateX(): applies a rotation transformation around X axiz to the current matrix.
+3. RotateY(): applies a rotation transformation around Y axiz to the current matrix.
+4. RotateZ(): applies a rotation transformation around Z axiz to the current matrix.
+5. Scale(): applies a scaling transformation to the current matrix using the given x, y and z scaling parameters.
+6. Translate(): applies a translation transformation to the current matrix using the given x, y and z translation parameters.
+7. Perspective(): applies a perspective transformation to the current matrix using the rx, ry, front clipping distance and back clipping distance.
+8. Transform(): transforms a given point using the current transformation matrix.
+
+For part2, the functions involved to read the user input values to change the current transfomration matrix are as follow:
+1. THRESHOLD_DIST_SQUARE: minimum square distance by which the mouse has to be displaced in order to apply the spin/tilt/translate changes
+2. LeftButtonDown(): it marks the point where the tilt or spin of the scene is changed
+3. LeftButtonDrag(): it measures and applies the value by which the tilt and spin have to be changed
+4. LeftButtonUp(): this stops the tilt and spin changes of the scene
+5. RightButtonDown(): this marks the point where the scene is to be translated along X and Y axis
+6. RightButtonDrag(): this measures and applies the translation to the scene using the mouse values
+7. RightButtonUp(): this stops the scene translation along X and Y axis
+8. MouseWheelUp(): it applies positive Z-axis translation to the scene
+9. MouseWheelDown(): it applies negative Z-axis translation to the scene
+10. BuildProjection(): it uses the current spin, tilt, zoom and translation values to calculate the projection matrix and the viewing matrix.

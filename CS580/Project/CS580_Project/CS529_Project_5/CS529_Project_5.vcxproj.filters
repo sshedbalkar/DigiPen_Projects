@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{d86b83ec-fb12-4040-b3a9-fcb6762ad664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine">
+      <UniqueIdentifier>{06648f49-1f70-4469-a814-2a8d731b49fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{30095b1b-c108-484e-b587-eff0637ee787}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Precompiled">
+      <UniqueIdentifier>{2ed2637b-36ad-42f0-9572-f5777c1c78a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Headers">
+      <UniqueIdentifier>{4d4c3b48-70c5-43ef-93f7-e09b829f1357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Debug">
+      <UniqueIdentifier>{d859a72c-a31f-4a69-8011-e5fe16ae682e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{52fe39ac-b1d3-471e-932e-02f764828760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Composition">
+      <UniqueIdentifier>{01e1916e-9134-4160-9142-61124e8d874e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Serialization">
+      <UniqueIdentifier>{abae35ac-64f4-4352-bf47-c6f6dd358fce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FastDelegate">
+      <UniqueIdentifier>{5a3a8484-748c-4870-9e8c-e5a888863a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems">
+      <UniqueIdentifier>{f2a0ec7e-ca02-499f-874b-610a726ff7f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Physics">
+      <UniqueIdentifier>{55d996c0-599f-4018-8649-4d79f965195c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Graphics">
+      <UniqueIdentifier>{546dc538-50a0-4261-93b3-a27c0bb96bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Windows">
+      <UniqueIdentifier>{b956255e-28cb-4b9e-a970-1bb09e8bccd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Graphics\System">
+      <UniqueIdentifier>{9493afa9-e0ca-44f1-abd2-a5b46de036ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Graphics\Components">
+      <UniqueIdentifier>{655f8fb2-2c2b-4a60-8cb1-11fe83703611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transformation">
+      <UniqueIdentifier>{bb8aa44d-14da-41ab-9d8f-6a2a977014dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Factory">
+      <UniqueIdentifier>{2297a107-f7c2-49fe-b88b-1c2917d630ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Graphics\Utilities">
+      <UniqueIdentifier>{c5aa16d4-1c9f-4069-b5af-8388f28968ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\GameLogic">
+      <UniqueIdentifier>{8ec036c8-5191-45dd-8449-71dbb113f110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\GameLogic\System">
+      <UniqueIdentifier>{ffe43f06-f3eb-4197-83e2-fac16c60666c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\GameLogic\Components">
+      <UniqueIdentifier>{b069d9ff-b751-4855-8786-74311f8766cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Serialization\XMLParser">
+      <UniqueIdentifier>{ca097d4e-dbda-4af0-bbc6-a908150b4994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\GameLogic\Level">
+      <UniqueIdentifier>{40b75994-36b4-4cbe-beab-0f4bc63c71da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\GameData">
+      <UniqueIdentifier>{ac8ad0f8-3091-4417-82b6-a4f89e2a11c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\GameData\System">
+      <UniqueIdentifier>{9c6a9cd1-3515-4fb6-a4fe-5f6c725d061c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Graphics\Assets">
+      <UniqueIdentifier>{16d864cd-0342-4460-b5f1-fe91b2df9d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Physics\System">
+      <UniqueIdentifier>{4a124dcb-80ef-41b7-9e4b-d252c5036edb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Physics\Collision">
+      <UniqueIdentifier>{b09b8e1a-1651-406a-902d-dcb1baaa3618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\Physics\Dynamics">
+      <UniqueIdentifier>{2c804c41-52b3-4e1e-a6de-d9dafffe1260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Systems\GameLogic\Other">
+      <UniqueIdentifier>{191ba061-fed9-4477-860e-32c5e823e774}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Message.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Source Files\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="Composition.cpp">
+      <Filter>Source Files\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="EventDispatcher.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>Source Files\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsSystem.cpp">
+      <Filter>Source Files\Systems\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Source Files\Systems\Graphics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files\Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Source Files\Transformation</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory.cpp">
+      <Filter>Source Files\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="FilePath.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Systems\GameLogic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>Source Files\Systems\GameLogic\System</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLSerialization.cpp">
+      <Filter>Source Files\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="Archetype.cpp">
+      <Filter>Source Files\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="GameData.cpp">
+      <Filter>Source Files\Systems\GameData\System</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelLoader.cpp">
+      <Filter>Source Files\Systems\GameLogic\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieClip.cpp">
+      <Filter>Source Files\Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugDraw.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Precompiled.cpp">
+      <Filter>Source Files\Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files\Systems\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Shape.cpp">
+      <Filter>Source Files\Systems\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Body.cpp">
+      <Filter>Source Files\Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>Source Files\Systems\Physics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Resolution.cpp">
+      <Filter>Source Files\Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugTools.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugPrint.cpp">
+      <Filter>Source Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageHandler.cpp">
+      <Filter>Source Files\Systems\GameLogic\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Boid.cpp">
+      <Filter>Source Files\Systems\GameLogic\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicEffect.cpp">
+      <Filter>Source Files\Systems\GameLogic\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="Flocking.cpp">
+      <Filter>Source Files\Systems\GameLogic\Level</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Containers.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Source Files\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Composition.h">
+      <Filter>Source Files\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="EventDispatcher.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentTypeIds.h">
+      <Filter>Source Files\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>Source Files\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsIncludes.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsSystem.h">
+      <Filter>Source Files\Systems\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugDiagnostic.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="FastDelegate.h">
+      <Filter>Source Files\FastDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include="FastDelegateBind.h">
+      <Filter>Source Files\FastDelegate</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgIds.h">
+      <Filter>Source Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugPrint.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugTools.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectLinkedList.h">
+      <Filter>Source Files\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Source Files\Systems\Graphics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Source Files\Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="VMath.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Source Files\Transformation</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentCreator.h">
+      <Filter>Source Files\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>Source Files\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderIds.h">
+      <Filter>Source Files\Systems\Graphics\Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXIncludes.h">
+      <Filter>Source Files\Systems\Graphics\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexTypes.h">
+      <Filter>Source Files\Systems\Graphics\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePath.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source Files\Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>Source Files\Systems\GameLogic\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Source Files\Systems\GameLogic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization.h">
+      <Filter>Source Files\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLSerialization.h">
+      <Filter>Source Files\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml.hpp">
+      <Filter>Source Files\Serialization\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_iterators.hpp">
+      <Filter>Source Files\Serialization\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_print.hpp">
+      <Filter>Source Files\Serialization\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidxml_utils.hpp">
+      <Filter>Source Files\Serialization\XMLParser</Filter>
+    </ClInclude>
+    <ClInclude Include="Archetype.h">
+      <Filter>Source Files\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="GameData.h">
+      <Filter>Source Files\Systems\GameData\System</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelLoader.h">
+      <Filter>Source Files\Systems\GameLogic\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieClip.h">
+      <Filter>Source Files\Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugDraw.h">
+      <Filter>Source Files\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Precompiled.h">
+      <Filter>Source Files\Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Source Files\Systems\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Source Files\Systems\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Body.h">
+      <Filter>Source Files\Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>Source Files\Systems\Physics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolution.h">
+      <Filter>Source Files\Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageHandler.h">
+      <Filter>Source Files\Systems\GameLogic\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Boid.h">
+      <Filter>Source Files\Systems\GameLogic\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicEffect.h">
+      <Filter>Source Files\Systems\GameLogic\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Flocking.h">
+      <Filter>Source Files\Systems\GameLogic\Level</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Shaders\Debug.fx">
+      <Filter>Source Files\Systems\Graphics\Assets</Filter>
+    </None>
+    <None Include="..\Shaders\Shader1.fx">
+      <Filter>Source Files\Systems\Graphics\Assets</Filter>
+    </None>
+    <None Include="..\Shaders\HalfShade.fx">
+      <Filter>Source Files\Systems\Graphics\Assets</Filter>
+    </None>
+    <None Include="Additive.fx">
+      <Filter>Source Files\Systems\Graphics\Assets</Filter>
+    </None>
+    <None Include="..\Shaders\Multiplicative.fx">
+      <Filter>Source Files\Systems\Graphics\Assets</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{fc29976f-31fa-430c-aa6a-be8c563bfc84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{ce84c99e-4116-4574-8f67-b8062b08364f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{419e95a9-94ad-4b80-8de9-fb19caa9adb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="readme">
+      <UniqueIdentifier>{512e34de-2765-4aac-ada5-10476c977dc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dyamanoh_lib">
+      <UniqueIdentifier>{501e1558-4f97-40ab-98d9-bd12445146a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dyamanoh_lib\souce">
+      <UniqueIdentifier>{a6f014c3-fd69-41bd-8863-103453a93957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dyamanoh_lib\headers">
+      <UniqueIdentifier>{0709bd6d-d9cf-4299-8b6a-621163689e66}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BSPTools.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="framework.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="geomlib-advanced.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="geomlib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="KDTools.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="render.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="scenelib.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="transformation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatLib\CoordinateSystem.cpp">
+      <Filter>dyamanoh_lib\souce</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatLib\Matrix4.cpp">
+      <Filter>dyamanoh_lib\souce</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatLib\Plane.cpp">
+      <Filter>dyamanoh_lib\souce</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatLib\Quaternion.cpp">
+      <Filter>dyamanoh_lib\souce</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MatLib\Vector4.cpp">
+      <Filter>dyamanoh_lib\souce</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BSPTools.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="geomlib.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="KDTools.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="scenelib.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="transformation.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatLib\CoordinateSystem.h">
+      <Filter>dyamanoh_lib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatLib\Matrix4.h">
+      <Filter>dyamanoh_lib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatLib\Plane.h">
+      <Filter>dyamanoh_lib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatLib\Quaternion.h">
+      <Filter>dyamanoh_lib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MatLib\Vector4.h">
+      <Filter>dyamanoh_lib\headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt">
+      <Filter>readme</Filter>
+    </None>
+  </ItemGroup>
+</Project>

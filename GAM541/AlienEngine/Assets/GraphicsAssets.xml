@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <meshes>
+    <mesh id="test" animated ="false" path="Assets\\models\\hero.md5mesh"/>
+  </meshes>
+  <textures>
+    <texture id="WoodTile">
+      <diffuse>Assets\\textures\\woodTile.jpg</diffuse>
+      <normal>Assets\\textures\\woodTile_normal.jpg</normal>
+      <mask>Assets\\textures\\test_mask.jpg</mask>
+    </texture>
+    <texture id="ParticleWhite">
+      <diffuse>Assets\\textures\\particle_white.jpg</diffuse>
+      <mask>Assets\\textures\\particle_square_mask.jpg</mask>
+    </texture>
+  </textures>
+  <animations>
+    <animation id="test" path=""/>
+  </animations>
+  <fonts>
+    <font id="" path=""/>
+  </fonts>
+</root>

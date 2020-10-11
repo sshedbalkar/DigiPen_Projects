@@ -1,0 +1,9 @@
+In all honesty, I was so buys this week I barely had time to get the ray casting and tree building portion of this assignment done.
+
+I'm writing this at 11:44 p.m, the night it's due... 
+
+So I got it all working, but my render times are around 6 seconds in the worse case situations.
+
+My tree was built by searching for the the plane that would split the bounding box into an as-even-as-possible split.  I didn't have 
+time to throughly investigate the heurisitic approach.  Sorry :(.
+

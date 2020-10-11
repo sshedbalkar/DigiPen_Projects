@@ -1,0 +1,4 @@
+g++ driver-nocompile1.cpp vector.cpp
+driver-nocompile1.cpp: In function 'int main(int, char**)':
+driver-nocompile1.cpp:8: error: passing 'const CS225::SparseVector' as 'this' argument of 'void CS225::SparseVector::Insert(int, long int)' discards qualifiers
+make: *** [nocompile1] Error 1

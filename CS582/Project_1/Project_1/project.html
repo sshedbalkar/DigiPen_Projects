@@ -1,0 +1,44 @@
+<html>
+<title>
+Bayesian network assignment
+</title>
+<body>
+<h2>Bayesian network assignment</h2>
+<a href=".">browse project folder</a>
+<a href="project.zip">project zip-archive</a>
+
+See <a href="handout.pdf">handout</a>.
+
+<p>
+See <a href="learning/subsets.h">subsets.h</a>
+and <a href="learning/main-test-subsets.cpp">main-test-subsets.cpp</a>
+-- generates all subsets for a given set size.
+
+<p>See  <a href="learning/example.1.init">example.1.init</a>
+and     <a href="learning/example.1.idea.1">example.1.idea.1</a>
+-- how to decide which nodes are parents. 
+
+<p>Here is my <a href="learning/main-check-alg.cpp">main-check-alg.cpp</a>
+that I used to generate probabilties for 
+<a href="learning/example.1.idea.1">example.1.idea.1</a>
+
+<p>
+<b>To submit</b>: 
+<ul>
+<li>  <tt>bn.cpp</tt> and <tt>bn.h</tt> 
+<li>  <tt>main-learning-demo.cpp</tt> and <tt>training_data</tt> and <tt>readme</tt> -- your main should implement a non-interative demo: 
+1) read training data 
+2) run learning algorithm 
+3) run tests - evaulate several probabilities using the learned network
+and compare them to estimated probabilities from the training-data.
+Don't use same probabilities for learning and tests. 
+</ul>
+
+<p>
+<b>Grading</b> will be based on
+<ul>
+<li>correctness of inference -- I'll use my own network and queries
+<li>learning will be graded based on your demo
+</ul>
+</body>
+</html>

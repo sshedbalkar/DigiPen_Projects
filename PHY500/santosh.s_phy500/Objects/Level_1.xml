@@ -1,0 +1,222 @@
+<root>
+	<items>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>1</GlobalID>
+			<Position>0.0000,-2.0000,0.0000</Position>
+			<Scale>20.0000,20.0000,0.5000</Scale>
+			<Orientation>-0.5000,0.5000,-0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>2</GlobalID>
+			<Position>10.0965,2.7412,0.0000</Position>
+			<Scale>20.0000,10.0000,0.5000</Scale>
+			<Orientation>0.0000,0.7071,0.0000,-0.7071</Orientation>
+		</item>
+		<item archetype="GOC_Type_Hero">
+			<GlobalID>3</GlobalID>
+			<Position>6.7689,-0.7500,1.7129</Position>
+			<Scale>2.0000,2.0000,2.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Button1">
+			<GlobalID>4</GlobalID>
+			<Position>7.2173,-2.1007,-3.8683</Position>
+			<Scale>3.0000,1.0000,3.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<ObjectActivationId>1</ObjectActivationId>
+			<ActivatedBy>   0,   0,   0,   0</ActivatedBy>
+		</item>
+		<item archetype="GOC_Type_Door1">
+			<GlobalID>5</GlobalID>
+			<Position>-0.3791,0.6666,-10.2122</Position>
+			<Scale>5.0000,5.0000,0.5000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<ObjectActivationId>2</ObjectActivationId>
+			<ActivatedBy>   1,   0,   0,   0</ActivatedBy>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>6</GlobalID>
+			<Position>-9.7346,2.7412,0.0000</Position>
+			<Scale>20.0000,10.0000,0.5000</Scale>
+			<Orientation>0.0000,0.7071,0.0000,-0.7071</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>7</GlobalID>
+			<Position>0.0000,2.7412,9.7101</Position>
+			<Scale>20.0000,10.0000,0.5000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>8</GlobalID>
+			<Position>6.1199,0.5720,-10.1647</Position>
+			<Scale>8.0000,5.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>9</GlobalID>
+			<Position>-6.3749,0.5720,-10.1647</Position>
+			<Scale>7.0000,5.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>10</GlobalID>
+			<Position>0.0000,7.3568,0.0000</Position>
+			<Scale>20.0000,20.0000,0.5000</Scale>
+			<Orientation>-0.5000,0.5000,-0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_CUBE">
+			<GlobalID>11</GlobalID>
+			<Position>-4.2797,-1.2500,-1.5561</Position>
+			<Scale>1.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,-0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>12</GlobalID>
+			<Position>0.0000,-2.0000,-202.6724</Position>
+			<Scale>50.0000,50.0000,0.5000</Scale>
+			<Orientation>-0.5000,0.5000,-0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_CUBE_THROWER">
+			<GlobalID>13</GlobalID>
+			<Position>-15.8931,10.6716,-142.2984</Position>
+			<Scale>2.0000,3.0000,2.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>14</GlobalID>
+			<Position>0.2365,-26.8712,-17.9875</Position>
+			<Scale>16.0000,20.0000,50.0000</Scale>
+			<Orientation>-0.5000,0.5000,-0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>15</GlobalID>
+			<Position>0.1601,7.8640,-10.1647</Position>
+			<Scale>20.0000,10.0000,0.9900</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Button1">
+			<GlobalID>16</GlobalID>
+			<Position>-7.3071,-8.7423,-49.0345</Position>
+			<Scale>3.0000,1.0000,3.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<ObjectActivationId>3</ObjectActivationId>
+			<ActivatedBy>   0,   0,   0,   0</ActivatedBy>
+		</item>
+		<item archetype="GOC_Type_Wall_Selectable">
+			<GlobalID>17</GlobalID>
+			<Position>0.8185,-2.2442,-25.6193</Position>
+			<Scale>4.5000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>18</GlobalID>
+			<Position>-1.6872,-33.3812,-52.7513</Position>
+			<Scale>16.0000,16.0000,50.0000</Scale>
+			<Orientation>-0.5000,0.5000,-0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall_Selectable">
+			<GlobalID>19</GlobalID>
+			<Position>0.8185,-8.6511,-44.9857</Position>
+			<Scale>5.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>20</GlobalID>
+			<Position>-9.6394,-17.2448,-49.8548</Position>
+			<Scale>80.0000,60.0000,0.5000</Scale>
+			<Orientation>0.0000,0.7071,0.0000,-0.7071</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>21</GlobalID>
+			<Position>30.2871,-17.2448,-49.8548</Position>
+			<Scale>80.0000,60.0000,0.5000</Scale>
+			<Orientation>0.0000,0.7071,0.0000,-0.7071</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>22</GlobalID>
+			<Position>20.1552,-24.8158,-10.1630</Position>
+			<Scale>20.0000,75.0000,0.9900</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>23</GlobalID>
+			<Position>42.4280,-18.4417,-151.8120</Position>
+			<Scale>19.5000,20.0000,50.0000</Scale>
+			<Orientation>-0.5000,0.5000,-0.5000,-0.5000</Orientation>
+		</item>
+		<item archetype="GOC_Type_CUBE">
+			<GlobalID>24</GlobalID>
+			<Position>24.6139,-6.9143,-52.7483</Position>
+			<Scale>1.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0001,-0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Door1">
+			<GlobalID>25</GlobalID>
+			<Position>-0.9034,-5.9846,-60.7026</Position>
+			<Scale>5.0000,5.0000,0.5000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+			<ObjectActivationId>4</ObjectActivationId>
+			<ActivatedBy>   3,   0,   0,   0</ActivatedBy>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>27</GlobalID>
+			<Position>25.2585,-32.4142,-52.7513</Position>
+			<Scale>10.0000,50.0000,10.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Floor">
+			<GlobalID>28</GlobalID>
+			<Position>10.1131,12.7342,-48.7691</Position>
+			<Scale>40.0000,1.0000,80.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>29</GlobalID>
+			<Position>15.8536,-24.8158,-60.7360</Position>
+			<Scale>29.0000,75.0000,0.9900</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>30</GlobalID>
+			<Position>-4.1213,4.9565,-60.7000</Position>
+			<Scale>11.0000,17.0000,0.9900</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall">
+			<GlobalID>31</GlobalID>
+			<Position>-6.3909,-5.8919,-60.7360</Position>
+			<Scale>6.0000,5.0000,0.9900</Scale>
+			<Orientation>0.0000,0.0000,0.0000,-1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Floor1">
+			<GlobalID>32</GlobalID>
+			<Position>10.1131,-17.9846,-48.7691</Position>
+			<Scale>40.0000,1.0000,80.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall_Selectable">
+			<GlobalID>34</GlobalID>
+			<Position>20.2016,-7.6909,-52.8479</Position>
+			<Scale>1.0000,1.0000,4.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_Wall_Selectable">
+			<GlobalID>35</GlobalID>
+			<Position>6.0216,-8.6146,-52.8479</Position>
+			<Scale>1.0000,1.0000,4.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_CUBE">
+			<GlobalID>36</GlobalID>
+			<Position>-4.4071,-1.2500,0.0235</Position>
+			<Scale>1.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+		<item archetype="GOC_Type_CUBE">
+			<GlobalID>37</GlobalID>
+			<Position>-1.9580,1.0947,-3.1576</Position>
+			<Scale>1.0000,1.0000,1.0000</Scale>
+			<Orientation>0.0000,0.0000,0.0000,1.0000</Orientation>
+		</item>
+	</items>
+</root>

@@ -1,0 +1,3 @@
+g++ driver.2.cpp vector.cpp
+Info: resolving std::cout  by linking to __imp___ZSt4cout (auto-import/usr/lib/gcc/i686-pc-cygwin/4.3.2/../../../../i686-pc-cygwin/bin/ld: warning: auto-importing has been activated without --enable-auto-import specified on the command line.
+This should work unless it involves constant data structures referencing symbols from auto-imported DLLs.)

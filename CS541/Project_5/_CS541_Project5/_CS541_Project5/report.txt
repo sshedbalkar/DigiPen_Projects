@@ -1,0 +1,24 @@
+Ralph Alan D'Souza
+ralph.dsouza
+60001411
+
+Firstly, I implemented ray casting in the DrawScene function by following the 
+algorithm described in class. There is a ray created for every pixel on the screen, 
+which requires nested for loops. The resulting ray is a Ray3D object.
+
+Next, in the PreprocessScene function, the list of triangles are created. This is
+done by looping through the objects in the scene, then looping through the 
+polygons in each object, followed by storing the polygon points in four Point3D objects.
+Triangles are created with the help of the Triangle3D class. Two triangles are
+created using the points 0,1,2 and points 0,2,3 respectively.
+The two triangles are assigned their respective diffuse and specular values based 
+on the corresponding values of the objects in the scene.
+The two triangles are pushed back onto a list of Triangle3D objects.
+
+Going back to the DrawScene function, after the ray is created, we have to loop
+through the triangle list and check whether the ray intersects with a particular 
+triangle. If there is an intersection, the triangle is drawn.
+At the same time, we have to check and make sure not to draw triangles that the eye
+cannot see, i.e., triangles should block the eye from seeing the other triangles 
+behind it.
+

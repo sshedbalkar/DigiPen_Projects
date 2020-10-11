@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<Settings>
+	</Settings>
+	<Archetypes>
+	   <Archetype id="arc_1" Name="Hero">
+			<Components>
+				<Component Type ="MeshInstance">
+					<id>test</id>
+				</Component>
+				 <Component Type="Transform">
+					<Position Type="Vector3" Description="">
+						<value>0,0,0</value>
+					</Position>
+					<Rotation Type="float" Description="">
+						<value>0</value>
+					</Rotation>
+					<Scale Type="Vector3" Description="">
+						<value>1,1,1</value>
+					</Scale>
+				 </Component>
+				<Component Type="Body">
+					<Mass  Type="float" Description="">
+						 <value>100</value>
+					</Mass>
+					<Restitution Type="float" Description="">
+						<value>0.00001f</value>
+					</Restitution>
+					<Friction  Type="float" Description="">
+						<value>0.3</value>
+					</Friction>
+					<Shape type="string">
+						<value>Box</value>
+					</Shape>
+					<DimensionHalf Type="float" Description="">
+						<value>0.5,0.5</value>
+					</DimensionHalf>
+				</Component>
+			</Components>
+		</Archetype>
+    <Archetype id ="platform_test0" Name="platform_type0">
+      <Components>
+          <Component Type ="VisualPlatform">
+          <Box>WoodTile</Box>
+           <Bottom>none</Bottom>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.3</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+					<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+      </Components>
+    </Archetype>
+	<Archetype id ="arc_2" Name="Button_Platform">
+      <Components>
+          <Component Type ="VisualPlatform">
+          <Box>WoodTile</Box>
+           <Bottom>none</Bottom>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.3</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+				<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+      </Components>
+    </Archetype>
+	<Archetype id ="arc_3" Name="Door_Platform">
+      <Components>
+          <Component Type ="VisualPlatform">
+          <Box>WoodTile</Box>
+           <Bottom>none</Bottom>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>0</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.00001</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+				<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+		<Component Type="GOC_Properties">
+			<ActivatedBySecondaryObjectIds  Type="string" Description="">
+				 <value>0,0,0,0</value>
+			</ActivatedBySecondaryObjectIds>
+			<SecondaryObjectId Type="int" Description="">
+				<value>0</value>
+			</SecondaryObjectId>
+			<ActivatesObjectWithSecondaryId Type="string" Description="">
+				<value>0</value>
+			</ActivatesObjectWithSecondaryId>
+		</Component>
+      </Components>
+    </Archetype>
+	
+    <Archetype id ="mesh_test0" Name="mesh_test0">
+      <Components>
+        <Component Type ="MeshInstance">
+          <id>test</id>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+      </Components>
+    </Archetype>
+	 <Archetype id ="box_0" Name="Moving_Box">
+      <Components>
+          <Component Type ="VisualPlatform">
+          <Box>WoodTile</Box>
+           <Bottom>none</Bottom>
+        </Component>
+        <Component Type ="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+		<Component Type="Body">
+			<Mass  Type="float" Description="">
+				 <value>10</value>
+			</Mass>
+			<Restitution Type="float" Description="">
+				<value>0.00001</value>
+			</Restitution>
+			<Friction  Type="float" Description="">
+				<value>0.3</value>
+			</Friction>
+			<Shape type="string">
+					<value>Box</value>
+			</Shape>
+			<DimensionHalf Type="float" Description="">
+				<value>0.5,0.5</value>
+			</DimensionHalf>
+		</Component>
+      </Components>
+    </Archetype>
+    
+    <Archetype id="particle_emitter_test0" name="particle_emitter_test0">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="ParticleEmitter">
+          <MaxParticles>2000</MaxParticles>
+          <BottomLeftFront>0.0f, 0.0f, -1.0f</BottomLeftFront>
+          <TopRightBack>1.0f, 0.0f, 1.0f</TopRightBack>
+          <InitialVelocity>0.0f, 0.0f, 0.0f</InitialVelocity>
+          <VelocityDeviation>0.0f, 0.0f, 0.0f</VelocityDeviation>
+          <RandomRotation>0</RandomRotation>
+          <ParticlesPerMillisecond>1.0f</ParticlesPerMillisecond>
+          <LifeSpan>0.5f</LifeSpan>
+          <LifeSpanDeviation>0.5f</LifeSpanDeviation>
+          <Interval>0.0f</Interval>
+          <ParticleRadius>0.2f</ParticleRadius>
+          <Texture>ParticleWhite</Texture>
+          <BlendMethod>None</BlendMethod>
+          <GravityAffecting>1</GravityAffecting>
+          <Shrinking>1</Shrinking>
+          <Rotating>1</Rotating>
+          <FilterFlag>8</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+
+    <Archetype id="particle_emitter_test1" name="particle_emitter_test1">
+      <Components>
+        <Component Type="Transform">
+          <Position Type="Vector3" Description="">
+            <value>0,0,0</value>
+          </Position>
+          <Rotation Type="float" Description="">
+            <value>0</value>
+          </Rotation>
+        </Component>
+        <Component Type="ParticleEmitter">
+          <MaxParticles>2000</MaxParticles>
+          <BottomLeftFront>0.0f, 0.0f, 0.0f</BottomLeftFront>
+          <TopRightBack>0.0f, 0.0f, 0.0f</TopRightBack>
+          <InitialVelocity>2.0f, 2.0f, 0.0f</InitialVelocity>
+          <VelocityDeviation>0.2f, 0.3f, 0.0f</VelocityDeviation>
+          <RandomRotation>0</RandomRotation>
+          <ParticlesPerMillisecond>0.7f</ParticlesPerMillisecond>
+          <LifeSpan>1.0f</LifeSpan>
+          <LifeSpanDeviation>0.4f</LifeSpanDeviation>
+          <Interval>0.0f</Interval>
+          <ParticleRadius>0.05f</ParticleRadius>
+          <Texture>ParticleWhite</Texture>
+          <BlendMethod>None</BlendMethod>
+          <GravityAffecting>1</GravityAffecting>
+          <Shrinking>0</Shrinking>
+          <Rotating>1</Rotating>
+          <FilterFlag>8</FilterFlag>
+        </Component>
+      </Components>
+    </Archetype>
+	</Archetypes>	
+</root>

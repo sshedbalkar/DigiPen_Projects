@@ -1,0 +1,165 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<title>CS260 assignment 2 </title>
+</head>
+<body>
+
+You will implement network Battleship (based on the original Battleship game).  The basic gameplay requirements you need are:
+
+<ul>
+<li>
+The board must be at least 10x10
+</li>
+<li>
+There must be at least 3 ships that are at least 3 tiles in size (they 
+may be placed randomly).  At no time should a player see where another 
+player's ships are located (they should still be able to see if 
+something was hit on a particular square, however)
+</li>
+<li>
+Must detect and indictate where I've tried shooting and whether or not 
+it was a hit ('x' for hit and 'o' for miss is fine but do whatever as 
+long as it's clear)
+</li>
+<li>
+Players take turns- one player indicates a square (i.e. A1 or D4 or 
+whatever square) and a shot is fired there.  Both players should see if 
+that shot was a hit or a miss.
+</li>
+<li>
+Win condition: Game must end and results must be shown when one player no longer has any ships remaining on the board
+</li>
+<li>
+Your game must be better than the most recent Battleship game that was 
+released by Activision (this is probably the easiest requirement on 
+here)
+</li>
+</ul>
+
+Specific requirements are as follows:
+<ol>
+<li>You will implement a client and server program. These will be 
+separate but you may (and probably should) re-use code from both 
+programs. You will utilize the SAME CONFIG FILE as in assignment 1.
+</li><li>
+When the client is started, prompt the user for a user name to use to 
+identify the client. DO NOT PROMPT THE USER FOR THE IP/PORT OF THE 
+SERVER, USE THE SAME CONFIG FILE AS IN ASSIGNMENT #1. You may choose 
+whether or not you want to restrict the user name's length and if you 
+wish to allow duplicate user names. Your choices should be reasonable 
+i.e. don't restrict the name length to 2 characters, but 10 characters 
+is probably fine.
+</li><li>
+Clients should then connect to the server. If a client cannot connect to
+ the server, an error message should be displayed informing the user of 
+what went wrong. The user should then be able to either try again or 
+quit the program.
+</li><li>
+When connected, a client should be able to type "list users" or 
+something similar, and a list of every user currently connected should 
+be displayed. This list should show the user's username and their 
+status. Status is determined by if a user is currently playing a game or
+ not and should look like this:
+<br>
+1. user1 (available)
+<br>
+2. user2 (in game)
+<br>
+3. user3 (in game)
+<br>
+4. user4 (available)
+<br>
+</li><li>
+A user can play a game of Battleship with another player. I should be 
+able to type something like this:
+
+play user1
+
+and this will initiate a Battleship game with user1. If user1 is already
+ in another game, an error message should be displayed that the user is 
+not available. NOTE: you are NOT making a direct connection between the 
+clients for playing a game; all packets should always go to the server 
+and then it's the server's responsibility to forward them to the correct
+ player. The server should be able to support multiple independent games
+ of Battleship at the same time.
+</li><li>
+A Battleship game is played between users. The first player should be 
+prompted for a move, and then when they type it, the second player 
+should be prompted for a move. This continues until one player types 
+"QUIT" or one player is the winnder, at which time the game ends. If a 
+user types a move when it is not their turn, it should be ignored and an
+ error message should be displayed (something like "it's not your turn" 
+is fine).  If a user quites or is disconnected for any reason, the 
+remaining player wins automatically.
+</li><li>
+When a game ends, the user should remain connected to the server in the 
+same state that they were before the game started. This means that I 
+could type "list users" again and see all the users on the server and 
+potentially play another game against a different user.
+</li><li>
+A user can disconnect from the server by typing "Exit" or something like that.
+</li><li>
+Server should be able to tell if a user disconnects for any reason (if 
+they type EXIT or are just booted off the network for some other 
+reason). If that user is in a game, then the user they are playing (who 
+is still connected) should be informat that their opponent has left the 
+game and then should behave as though the user had typed QUIT to end the
+ game (i.e. the remaining player is declared the winner)
+</li>
+</ol>
+
+
+Extra credit:
+<ol>
+<li>
+(5 points) "Spectator mode" - another user can watch a game between two 
+players. They should be able to see the board status and the board 
+should be re-displayed to that user. A spectator cannot make moves and 
+is invisible to the players (yes, this facilitates collusion but that's 
+ok for this assignment). A spectator may leave the game at any time, or 
+may also re-join a game.
+</li><li>
+(2 points) as above, but a spectator can watch more than one game at the
+ same time. Each board should display not only the moves, but the names 
+of both opponents so that the user can readily identify which game that 
+board belongs to.
+</li><li>
+(2 points) automated matchmaking- a client can log on to the server and 
+type "start game" and the server will pick a random, non-busy opponent 
+for them to play a game with.
+</li><li>
+(2 points) as above, but if no available player exists, the server will 
+display something like "searching for players, please wait" and wait a 
+reasonable amount of time for a player to become available and then 
+match the two players at that time. If the time period expires and no 
+players are available, an error message should be displayed.
+</li>
+<li>
+(2 points) Players can choose where they want to place each of their ships
+</li><li>
+(3 points) All ships that ocurred in the original "Battleship" game are implemented, so destroyer, cruiser, battleship, carrier
+</li>
+</ol>
+
+REMEMBER: if you attempt ANY extra credit, you must CLEARLY document in 
+the README file which extra credit options you attempted so that I know 
+to look for them. 
+You should get the server's IP address and port from a config file that 
+consists of two lines: the first line should be the IP address of the 
+server, the second line should be the port that the server is listening 
+on. A sample file might look like this:<hr>
+<br>
+10.12.66.84<br>
+8000
+
+<br>
+<hr>
+Both your client and server should take their settings from this file 
+(the server only really needs to read the port since it knows its own IP
+ address) and it should be called config.txt and should live in the same
+ directory as your executable.
+
+
+
+
+</body></html>

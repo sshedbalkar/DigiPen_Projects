@@ -1,0 +1,20 @@
+render.cpp:
+1. Initializes the KD Tree
+2. Implements raycasting and checks if a given ray intersects with the KD Tree
+3. If such an intersection happens, it outputs the color of the pixel to the screen
+
+KDTree.h:
+	Class KDNode:
+	1. Implements a KDNode Class which is used as a node in the KD Tree
+	2. Has a list of all the polygons in the node
+	3. Has a AABB covering all the polygons
+	4. Has pointers to left and right side KD Nodes
+
+	Class KDTree:
+	1. Builds KD Tree from a given set of polygons
+	2. implements function to check if a ray intersects with the KD Tree
+	
+
+Note:
+Currently only the Raycasting part is working(Filled screen)
+I have implemented the KD Tree but the it has bugs which I am not able to debug.

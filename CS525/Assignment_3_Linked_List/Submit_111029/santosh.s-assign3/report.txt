@@ -1,0 +1,62 @@
+grading 525 A santosh.s
+== SUBMISSION =============================
+10 
+== COMPILE ================================
+"make gcc0 &> out.make.gcc0.txt"	gcc0 OK.	6/6
+"make bcc0 &> out.make.bcc0.txt"	bcc0 OK.	6/6
+"make msc0 &> out.make.msc0.txt"	msc0 OK.	6/6
+"make bcc_cg &> out.make.bcc_cg.txt"	bcc_cg OK.	0/0
+"make additional &> out.make.additional.txt"	additional OK.	5/5
+"make nocompile1 &> out.make.nocompile1.txt"	nocompile1 does not compile 0(-10)
+"make nocompile2 &> out.make.nocompile2.txt"	nocompile2 does not compile 0(-10)
+== RUNTIME ================================
+test 0 (using msc0.exe): ./msc0.exe 0  >student.out0
+OK  (2/2 points)
+test 1 (using msc0.exe): ./msc0.exe 1  >student.out1
+OK  (2/2 points)
+test 2 (using gcc0.exe): ./gcc0.exe 2  >student.out2
+OK  (2/2 points)
+test 3 (using gcc0.exe): ./gcc0.exe 3  >student.out3
+OK  (2/2 points)
+test 4 (using gcc0.exe): ./gcc0.exe 4  >student.out4
+OK  (2/2 points)
+test 5 (using gcc0.exe): ./gcc0.exe 5  >student.out5
+OK  (2/2 points)
+test 6 (using msc0.exe): ./msc0.exe 6  >student.out6
+OK  (2/2 points)
+test 7 (using gcc0.exe): ./gcc0.exe 7  >student.out7
+OK  (2/2 points)
+test 8 (using msc0.exe): ./msc0.exe 8  >student.out8
+OK  (2/2 points)
+test 9 (using gcc0.exe): ./gcc0.exe 9  >student.out9
+OK  (2/2 points)
+test 10 (using gcc0.exe): ./gcc0.exe 10  >student.out10
+OK  (2/2 points)
+test 11 (using msc0.exe): ./msc0.exe 11  >student.out11
+OK  (2/2 points)
+test 12 (using msc0.exe): ./msc0.exe 12  >student.out12
+OK  (2/2 points)
+test 13 (using msc0.exe): ./msc0.exe 13  >student.out13
+OK  (2/2 points)
+test 14 (using msc0.exe): ./msc0.exe 14  >student.out14
+OK  (2/2 points)
+test 15 (using gcc0.exe): ./gcc0.exe 15  >student.out15
+OK  (2/2 points)
+test 16 (using gcc0.exe): ./gcc0.exe 16  >student.out16
+OK  (2/2 points)
+test 17 (using msc0.exe): ./msc0.exe 17  >student.out17
+OK  (2/2 points)
+test 118 (using bcc_cg.exe): ./bcc_cg.exe 18  >student.out18
+bcc_cg.cgl wasn't found
+OK  (20/20 points)
+
+===========================================
+GRADE before code quality check +[0..11] is 89
+===========================================
+Grading script usage "/home/dvolper/bin2/grading.1.pl 525 A santosh.s".
+your code (vector.cpp vector.h r.txt) should be in A/santosh.s/ relative to
+(Makefile driver.2.cpp driver.cpp driver-nocompile1.cpp driver-nocompile2.cpp out0 out1 out2 out3 out4 out5 out6 out7 out8 out9 out10 out11 out12 out13 out14 out15 out16 out17 bcc_cg.cgi).
+NOTES:
+tagret nocompile1 checks if Insert is prohibited for const vectors 
+tagret nocompile2 checks if SparseVector::operator[] DISallows writing to const vectors 
+tagret additional checks if copy construction and assignment use "const&"

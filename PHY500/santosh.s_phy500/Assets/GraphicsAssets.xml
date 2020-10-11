@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>  
+  <Models>
+    <Model id="Cube">
+     <texture1>Assets//textures//cube.png</texture1>
+	   <bin>Assets//models//cube.bin</bin>
+	  <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="Cube2">
+      <texture1>Assets//textures//backdrop_sky.jpg</texture1>
+      <bin>Assets//models//cube2.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+      <Model id="Cube3">
+        <texture1>Assets//textures//brick.png</texture1>
+        <bin>Assets//models//cube3.bin</bin>
+        <textureType>SingleTexture</textureType>
+      </Model>
+    <Model id="Button">
+      <texture1>Assets//textures//red.png</texture1>
+      <bin>Assets//models//button.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+	<Model id="Door">
+      <texture1>Assets//textures//doortest.png</texture1>
+      <bin>Assets//models//door.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="Sphere">
+      <texture1>Assets//textures//particle_gold.jpg</texture1>
+      <bin>Assets//models//sphere.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    
+    <Model id="SphereRed">
+      <texture1>Assets//textures//color_red.png</texture1>
+      <bin>Assets//models//SphereRed.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="SphereGreen">
+      <texture1>Assets//textures//color_green.png</texture1>
+      <bin>Assets//models//SphereGreen.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="SphereBlue">
+      <texture1>Assets//textures//color_blue.png</texture1>
+      <bin>Assets//models//SphereBlue.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="SphereOrange">
+      <texture1>Assets//textures//color_orange.png</texture1>
+      <bin>Assets//models//SphereOrange.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="SpherePurple">
+      <texture1>Assets//textures//color_purple.png</texture1>
+      <bin>Assets//models//SpherePurple.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+	<Model id="SphereYellow">
+      <texture1>Assets//textures//color_yellow.jpg</texture1>
+      <bin>Assets//models//SphereYellow.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="SphereGrey">
+      <texture1>Assets//textures//color_grey.jpg</texture1>
+      <bin>Assets//models//SphereGrey.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+	  <Model id="Quad">
+      <texture1>Assets//textures//green.png</texture1>
+	   <bin>Assets//models//quad.bin</bin>
+	  <textureType>SingleTexture</textureType>
+    </Model>
+    <Model id="WallUnselected">
+      <texture1>Assets//textures//whitewall.jpg</texture1>
+      <bin>Assets//models//wallunselected.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+
+    <Model id="WallSelected">
+      <texture1>Assets//textures//whitewall.jpg</texture1>
+      <texture2>Assets//textures//darkblue.png</texture2>
+      <bin>Assets//models//wallselected.bin</bin>
+      <textureType>TextureBlend</textureType>
+    </Model>
+
+    <Model id="TransparentBridge">
+      <texture1>Assets//textures//blueTile.jpg</texture1>
+      <bin>Assets//models//transparentbridge.bin</bin>
+      <textureType>Transparent</textureType>
+    </Model>
+
+    <Model id="Wall">
+      <texture1>Assets//textures//cube.png</texture1>
+      <bin>Assets//models//wall.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+
+    <Model id="Floor">
+      <texture1>Assets//textures//Seamless.png</texture1>
+      <bin>Assets//models//floor.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+	
+	<Model id="Floor1">
+      <texture1>Assets//textures//TileFloorTexture.jpg</texture1>
+      <bin>Assets//models//floor1.bin</bin>
+      <textureType>SingleTexture</textureType>
+    </Model>
+
+  </Models> 
+   
+   <Models2>
+   </Models2> 
+</root>
+
+
+
+
+

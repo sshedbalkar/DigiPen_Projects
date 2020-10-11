@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Archetypes>
+		<Archetype id ="GOC_Type_CUBE_THROWER">
+		  <Components>
+			<Component Type ="Transform"/>
+			<Component Type ="CollisionBox">
+			  <HalfSize>0.5,0.5,0.5</HalfSize>
+			</Component>
+			<Component Type ="ModelComponent">
+			  <ModelName>cube3</ModelName>
+			</Component>
+			
+		  </Components>
+		</Archetype>
+	
+	</Archetypes>	
+</root>

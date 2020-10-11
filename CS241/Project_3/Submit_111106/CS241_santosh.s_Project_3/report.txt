@@ -1,0 +1,4 @@
+The functions involved in the Scanline Conversion and Z-buffer are as follow:
+
+ScanConvert(): The function which is used to perform scanline conversions of individual triangle polys
+SetPixel(): Performs depth test on the given screen coordinate and draws it if the test succeeds

@@ -1,0 +1,5 @@
+bcc32 -ebcc0.exe driver.c spvector.c -w 
+Borland C++ 5.82 for Win32 Copyright (c) 1993, 2005 Borland
+driver.c:
+spvector.c:
+Turbo Incremental Link 5.69 Copyright (c) 1997-2005 Borland

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="framework">
+</Property><Property Name="Solution File" Value="C:\Users\Ralph\Documents\Dropbox\DigiPen\CS 541\RalphDsouza_CS541_Project5\framework.sln">
+</Property><Property Name="Date" Value="Friday, April 20, 2012">
+</Property><Property Name="Time" Value="20:21:40 PM">
+</Property></Properties><Event ErrorLevel="0" Project="framework" Source="framework.vcproj" Description="Converting project file 'C:\Users\Ralph\Documents\Dropbox\DigiPen\CS 541\RalphDsouza_CS541_Project5\framework.vcproj'.">
+</Event><Event ErrorLevel="1" Project="framework" Source="framework.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="framework" Source="framework.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="framework" Source="framework.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="framework" Source="framework.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="framework" Source="framework.vcproj" Description="Done converting to new project file 'C:\Users\Ralph\Documents\Dropbox\DigiPen\CS 541\RalphDsouza_CS541_Project5\framework.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="framework" Source="framework.vcproj" Description="Converted">
+</Event></UpgradeLog>

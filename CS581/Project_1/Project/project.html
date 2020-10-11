@@ -1,0 +1,138 @@
+<html>
+<title>
+Vacuum-cleaner project
+</title>
+
+<body>
+For this assignment you have to implement a vacuum-cleaner agent. 
+
+<br>
+<a href=".">files</a>
+<br>
+<a href="project.zip">zipped files</a>
+
+<p>
+<b>Environment</b>
+<br>
+The environment for the agent is a rectangular grid containing 
+<ul>
+ <li> walls - marked as <tt>'#'</tt>
+ <li> dirt  - marked as <tt>'*'</tt>
+ <li> home position - marked as <tt>'H'</tt>
+</ul>
+Some properties:
+<ul>
+ <li> cell containing a wall cannot contain any other object
+ <li> there is no more than one "dirt" in each cell
+ <li> home position is arbitrary - but not inside a wall
+</ul>
+
+<p>
+<b>Agent</b>
+<br>
+Agent design is completely up to you. See <tt>agent.cpp</tt> and <tt>agent.h</tt> for an example, check <tt>definitions.h</tt> for notations. Study <tt>environment.cpp</tt> and <tt>environment.h</tt>.
+<br>Agent start position (home position) and initial heading (orientation) are arbitrary - see file format description.
+
+<p>
+<b>Actions</b>
+<br>
+<ul>
+ <li> left
+ <li> right
+ <li> forward
+ <li> suck
+ <li> shutoff
+ <li> noop
+</ul>
+
+<p>
+<b>Agent termination</b>
+<br>
+Environment is running in a loop till one of the following happens
+<ul>
+ <li> agent executes <tt>shutoff</tt>
+ <li> agent performs <tt>max_steps</tt> (see <tt>definitions.h</tt>, currently set to 10000.
+ <li> agent's battery is empty (extra credit only)
+</ul>
+
+
+<p>
+<b>Performance measure</b>
+<br>
+Agents performance is calculated as follows:
+unless agent is "OFF" it's <tt>score</tt> is 
+<br>
+number of collected dirt multiplied by 20 minus the number of steps (actions)
+<br>
+that is if after 125 steps you have collected 7 "dirts" agent's score is <tt>20*7-125 = 15</tt>
+<br>
+when agent executes <tt>shutoff</tt>, it gets additional 1000 points if it's in "home cell".
+
+<p>
+<b>Percept</b>
+<br>
+See <tt>definitions.h</tt>:
+<ul>
+ <li> dirt - boolean - if there is dirt in this cell
+ <li> bump - boolean - if agent bumped to a wall during previous move
+ <li> home boolean - if this is a home position
+</ul>
+
+<p>
+<b>Environment file format</b>
+<br>
+Mostly self-explanatory,
+<ul>
+ <li> <tt>'#'</tt> wall
+ <li> <tt>'.'</tt> nothing
+ <li> <tt>'*'</tt> dirt
+ <li> <tt>'&gt;'</tt> agent start/home position, orientation EAST
+ <li> <tt>'&lt;'</tt> agent start/home position, orientation WEST
+ <li> <tt>'^'</tt> agent start/home position, orientation NORTH
+ <li> <tt>'V'</tt> agent start/home position, orientation SOUTH
+</ul>
+
+<p>
+<b>Extra credit</b>
+<br>
+To compile code with extra credit part define <tt>EXTRA_CREDIT</tt> (see <tt>Makefile</tt>).
+
+<p>
+<b>Submission</b>
+<br>
+<ul>
+ <li>ANSI C++. 
+ <li>files - <tt>agent.h</tt> and <tt>agent.cpp</tt>. 
+ <li>extra files if any, in this case you should also submit a <tt>Makefile</tt>. If no <tt>Makefile</tt> provided I'll use mine.
+ <li><tt>README</tt> - short description of your agent design (ASCII).
+ <li>notice that you <b>DO NOT</b> submit  <tt>environment.*</tt>,  <tt>driver.cpp</tt> and <tt>definitions.h</tt>. You may modify them while you debug, but before submitting make sure your code works with the original files.
+ <li>Extra credit submission: DO NOT submit separate code - use <tt>#ifdef EXTRA_CREDIT</tt>
+ <li>if you implemented extra credit, include <tt>EXTRA_CREDIT_IMPLEMENTED</tt> to the README file.
+</ul>
+
+<p>
+<b>Grading</b>
+<br>
+<ul>
+ <li> submission 20%, late policy -1% every 2 hours for up to 2 days. After that submissions are not excepted.
+ <li> design 40% (what you tried to implement - based on README file). For
+example if you submit my agent, it'll get 0% for design. If you submit my
+agent, but with different probabilities, it'll get up to 20% depending on how
+well you explain the changes.
+ <li> performance 40% (what you actually implemented), agent will be tested
+against my reactive agent - the one implemented in <tt>agent.cpp</tt>. You
+already have 6 levels that will be used for grading. There will be 4 more - I'm
+not posting them. REMARK: I'll use my own random seed, which you don't know -
+this way all agents will use exactly the same sequence of random numbers.  For
+each 10 levels I'll run your agent 10-20 times to determine average score and
+compare it to my agent, if your agent wins it gets 40%/10=4%, if it's a draw
+2%, 0% if it looses.
+ <li> extra credit grading: Total weight of extra part is a half of the
+assignment. Grade is calculated: 50% design, 50% performance. I'll use different
+levels and arbitrary battery capacity - neither is known to you. Battery
+capacity may be small!!!, so that agent cannot reach all the cells. Performance
+grading is the same as for main assignment.
+</ul>
+
+</body>
+</html>

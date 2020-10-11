@@ -1,0 +1,247 @@
+﻿Build started 10/13/2012 12:15:35 PM.
+     1>Project "E:\Work_Work\Projects\CS580\HW_3\Submit_120612\Project2_3\PathfindingProject.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\PathfindingProject.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"e:\Program Files (x86)\Microsoft DirectX SDK (February 2010)\\INCLUDE" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"DXUT.h" /Fp"Release\PathfindingProject.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Source\DXUT\DXUT.cpp
+         DXUT.cpp
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"e:\Program Files (x86)\Microsoft DirectX SDK (February 2010)\\INCLUDE" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"DXUT.h" /Fp"Release\PathfindingProject.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Source\AStar.cpp Source\body.cpp Source\gameobject.cpp Source\movement.cpp Source\agent.cpp Source\unittest1.cpp Source\unittest2a.cpp Source\unittest2b.cpp Source\unittest2c.cpp Source\unittest3a.cpp Source\unittest3b.cpp Source\unittest4.cpp Source\unittest5.cpp Source\unittest6.cpp Source\AllocHierarchy.cpp Source\AnimationInstance.cpp Source\Tiny.cpp Source\DXUT\DXUTcamera.cpp Source\DXUT\DXUTenum.cpp Source\DXUT\DXUTgui.cpp Source\DXUT\DXUTmisc.cpp Source\DXUT\DXUTres.cpp Source\DXUT\DXUTsettingsdlg.cpp Source\DXUT\SDKmisc.cpp Source\DXUT\SDKsound.cpp Source\DXUT\SDKwavefile.cpp Source\database.cpp Source\debugdrawing.cpp Source\Map.cpp Source\terrain.cpp Source\time.cpp Source\world.cpp Source\debuglog.cpp Source\msg.cpp Source\msgroute.cpp Source\statemch.cpp Source\triggersystem.cpp Source\MultiAnimation.cpp Source\MultiAnimationLib.cpp
+         AStar.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1092): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1094): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+         body.cpp
+         gameobject.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1092): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1094): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+         movement.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1092): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1094): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+         agent.cpp
+         unittest1.cpp
+         unittest2a.cpp
+         unittest2b.cpp
+         unittest2c.cpp
+         unittest3a.cpp
+         unittest3b.cpp
+         unittest4.cpp
+         unittest5.cpp
+         unittest6.cpp
+         AllocHierarchy.cpp
+         AnimationInstance.cpp
+         Tiny.cpp
+         DXUTcamera.cpp
+         DXUTenum.cpp
+         DXUTgui.cpp
+         Compiling...
+         DXUTmisc.cpp
+         DXUTres.cpp
+         DXUTsettingsdlg.cpp
+         SDKmisc.cpp
+         SDKsound.cpp
+         SDKwavefile.cpp
+         database.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1092): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1094): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+         debugdrawing.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+         Map.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+         terrain.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1092): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1094): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+         time.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+         world.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1092): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1094): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+         debuglog.cpp
+         msg.cpp
+         msgroute.cpp
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(48): warning C4995: 'gets': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(52): warning C4995: 'sprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstdio(55): warning C4995: 'vsprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(21): warning C4995: 'strcat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(22): warning C4995: 'strcpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(23): warning C4995: 'strncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cstring(24): warning C4995: 'strncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(30): warning C4995: 'swprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(31): warning C4995: 'vswprintf': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(33): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(35): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\cwchar(36): warning C4995: 'wcsncpy': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1092): warning C4995: 'wcscat': name was marked as #pragma deprecated
+     1>E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\intrin.h(1094): warning C4995: 'wcscpy': name was marked as #pragma deprecated
+         statemch.cpp
+         triggersystem.cpp
+         MultiAnimation.cpp
+         MultiAnimationLib.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Release\MultiAnimation.res" MultiAnimation.rc 
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Work_Work\Projects\CS580\HW_3\Submit_120612\Project2_3\Release\PathfindingProject.exe" /NOLOGO /LIBPATH:"e:\Program Files (x86)\Microsoft DirectX SDK (February 2010)\\LIB\X86" dxerr.lib dxguid.lib d3dx9.lib d3dx10.lib d3d9.lib comctl32.lib winmm.lib dsound.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST:NO /DEBUG /PDB:"E:\Work_Work\Projects\CS580\HW_3\Submit_120612\Project2_3\Release\PathfindingProject.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Work_Work\Projects\CS580\HW_3\Submit_120612\Project2_3\Release\PathfindingProject.lib" /MACHINE:X86 Release\MultiAnimation.res
+         Release\AStar.obj
+         Release\body.obj
+         Release\gameobject.obj
+         Release\movement.obj
+         Release\agent.obj
+         Release\unittest1.obj
+         Release\unittest2a.obj
+         Release\unittest2b.obj
+         Release\unittest2c.obj
+         Release\unittest3a.obj
+         Release\unittest3b.obj
+         Release\unittest4.obj
+         Release\unittest5.obj
+         Release\unittest6.obj
+         Release\AllocHierarchy.obj
+         Release\AnimationInstance.obj
+         Release\Tiny.obj
+         Release\DXUT.obj
+         Release\DXUTcamera.obj
+         Release\DXUTenum.obj
+         Release\DXUTgui.obj
+         Release\DXUTmisc.obj
+         Release\DXUTres.obj
+         Release\DXUTsettingsdlg.obj
+         Release\SDKmisc.obj
+         Release\SDKsound.obj
+         Release\SDKwavefile.obj
+         Release\database.obj
+         Release\debugdrawing.obj
+         Release\Map.obj
+         Release\terrain.obj
+         Release\time.obj
+         Release\world.obj
+         Release\debuglog.obj
+         Release\msg.obj
+         Release\msgroute.obj
+         Release\statemch.obj
+         Release\triggersystem.obj
+         Release\MultiAnimation.obj
+         Release\MultiAnimationLib.obj
+         Generating code
+         Finished generating code
+         PathfindingProject.vcxproj -> E:\Work_Work\Projects\CS580\HW_3\Submit_120612\Project2_3\Release\PathfindingProject.exe
+       FinalizeBuildStatus:
+         Deleting file "Release\PathfindingProject.unsuccessfulbuild".
+         Touching "Release\PathfindingProject.lastbuildstate".
+     1>Done Building Project "E:\Work_Work\Projects\CS580\HW_3\Submit_120612\Project2_3\PathfindingProject.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:19.50

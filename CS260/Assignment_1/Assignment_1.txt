@@ -1,0 +1,8 @@
+You will build an echo server and a client that can connect to it. Requirements are:
+
+1.  Server will read the port that it should listen on from the config file and will then start listening on its IP address and port, which it will display. Server will wait for an incoming connection.
+2.  Client will start and read the server's IP and port from the config file. Client will then connect to the server. It's ok to have a prompt of some sort that says "press enter to connect to the server" or something like that, however it may attempt to connect when the client starts if you would prefer.
+3.  When the client is connected to the server, if the user types some text and presses enter, it will send that text to the server. The server will print that text to the screen, and then send it back to the client, which will also print the text to the screen.
+4.  When the client quits (have a way for me to gracefully quit the client program, like "type /q" or something like that, document it in your readme) the server should be able to receive a new client.
+
+You should get the server's IP address and port from a config file that consists of two lines: the first line should be the IP address of the server, the second line should be the port that the server is listening on. A sample file might look like this: 10.12.66.84 8000 Both your client and server should take their settings from this file (the server only really needs to read the port since it knows its own IP address) and it should be called config.txt and should live in the same directory as your executable. NOTE: It is not necessary for the server to be able to accept multiple clients at the same time (yet). 

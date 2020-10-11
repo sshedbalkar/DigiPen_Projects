@@ -1,0 +1,3 @@
+I have not created my scenes. I used the scenes given with the project.
+
+output image file test.ppm is created periodically(every 5 passes). The program is written to run for 5000 passes. But the first output image should be visible as soon as 5 passes have been completed.

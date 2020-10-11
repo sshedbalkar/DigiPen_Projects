@@ -1,0 +1,3 @@
+I created my Kd tree by dividing the tiangles in the scene.
+Raycasting is implemented from the eye (origin) to every pixel (destination).
+If any intersection is found, that point is drawn on the screen.

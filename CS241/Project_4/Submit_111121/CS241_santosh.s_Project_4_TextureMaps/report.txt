@@ -1,0 +1,12 @@
+The functions and data structures involved in the Texture Map project are:
+
+Data Structures:
+1. Shade		Data Structure to store the texture coordinates and lighting info (if any) of a pixel
+2. TransVertex	Data structure to store the 4D position value and the color info of a vertex. This is the parameter that will be passed from the Render() to Cliiper() to ScanlineCenvert()
+3. Mipmap		Data structure to store the processed MIP map data and its meta data
+
+Functions:
+1. Clipper() and ScanConvert() have been changed so that now they accpet color info of the vertices and process them as well
+2. SetPixel() has been changed so that now it can use a MIP map object
+3. createMipmap()	Function which creates MIP map object from a Texture object
+4. getMipRef()		Function used to get a pointer to the color sequence within a MIP map using the level and the coordinates within the MIP map
